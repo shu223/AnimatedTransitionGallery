@@ -1,5 +1,5 @@
 //
-//  TTMViewController.h
+//  TTMMasterViewController.h
 //  TTMAnimatedTransitionGallery
 //
 //  Created by shuichi on 3/10/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TTMViewController : UIViewController
+@interface TTMMasterViewController : UITableViewController
 
 @end

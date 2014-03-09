@@ -7,161 +7,222 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A11EB6B18CCF5AF00B77081 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11EB6A18CCF5AF00B77081 /* Foundation.framework */; };
-		8A11EB6D18CCF5AF00B77081 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11EB6C18CCF5AF00B77081 /* CoreGraphics.framework */; };
-		8A11EB6F18CCF5AF00B77081 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11EB6E18CCF5AF00B77081 /* UIKit.framework */; };
-		8A11EB7518CCF5AF00B77081 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A11EB7318CCF5AF00B77081 /* InfoPlist.strings */; };
-		8A11EB7718CCF5AF00B77081 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A11EB7618CCF5AF00B77081 /* main.m */; };
-		8A11EB7B18CCF5AF00B77081 /* TTMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A11EB7A18CCF5AF00B77081 /* TTMAppDelegate.m */; };
-		8A11EB7E18CCF5AF00B77081 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A11EB7C18CCF5AF00B77081 /* Main.storyboard */; };
-		8A11EB8118CCF5AF00B77081 /* TTMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A11EB8018CCF5AF00B77081 /* TTMViewController.m */; };
-		8A11EB8318CCF5AF00B77081 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A11EB8218CCF5AF00B77081 /* Images.xcassets */; };
-		8A11EB8A18CCF5AF00B77081 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11EB8918CCF5AF00B77081 /* XCTest.framework */; };
-		8A11EB8B18CCF5AF00B77081 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11EB6A18CCF5AF00B77081 /* Foundation.framework */; };
-		8A11EB8C18CCF5AF00B77081 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11EB6E18CCF5AF00B77081 /* UIKit.framework */; };
-		8A11EB9418CCF5AF00B77081 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A11EB9218CCF5AF00B77081 /* InfoPlist.strings */; };
-		8A11EB9618CCF5AF00B77081 /* TTMAnimatedTransitionGalleryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A11EB9518CCF5AF00B77081 /* TTMAnimatedTransitionGalleryTests.m */; };
+		8A11EBF618CCFBDB00B77081 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11EBF518CCFBDB00B77081 /* Foundation.framework */; };
+		8A11EBF818CCFBDB00B77081 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11EBF718CCFBDB00B77081 /* CoreGraphics.framework */; };
+		8A11EBFA18CCFBDB00B77081 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11EBF918CCFBDB00B77081 /* UIKit.framework */; };
+		8A11EC0018CCFBDC00B77081 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A11EBFE18CCFBDC00B77081 /* InfoPlist.strings */; };
+		8A11EC0218CCFBDC00B77081 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A11EC0118CCFBDC00B77081 /* main.m */; };
+		8A11EC0618CCFBDC00B77081 /* TTMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A11EC0518CCFBDC00B77081 /* TTMAppDelegate.m */; };
+		8A11EC0918CCFBDC00B77081 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A11EC0718CCFBDC00B77081 /* Main.storyboard */; };
+		8A11EC0C18CCFBDC00B77081 /* TTMMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A11EC0B18CCFBDC00B77081 /* TTMMasterViewController.m */; };
+		8A11EC0F18CCFBDC00B77081 /* TTMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A11EC0E18CCFBDC00B77081 /* TTMDetailViewController.m */; };
+		8A11EC1118CCFBDC00B77081 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A11EC1018CCFBDC00B77081 /* Images.xcassets */; };
+		8A11EC1818CCFBDC00B77081 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11EC1718CCFBDC00B77081 /* XCTest.framework */; };
+		8A11EC1918CCFBDC00B77081 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11EBF518CCFBDB00B77081 /* Foundation.framework */; };
+		8A11EC1A18CCFBDC00B77081 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11EBF918CCFBDB00B77081 /* UIKit.framework */; };
+		8A11EC2218CCFBDC00B77081 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A11EC2018CCFBDC00B77081 /* InfoPlist.strings */; };
+		8A11EC2418CCFBDC00B77081 /* TTMAnimatedTransitionGalleryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A11EC2318CCFBDC00B77081 /* TTMAnimatedTransitionGalleryTests.m */; };
+		8A11EC3A18CCFCC000B77081 /* HUTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A11EC3318CCFCC000B77081 /* HUTransitionAnimator.m */; };
+		8A11EC3B18CCFCC000B77081 /* HUTransitionGhostAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A11EC3518CCFCC000B77081 /* HUTransitionGhostAnimator.m */; };
+		8A11EC3C18CCFCC000B77081 /* HUTransitionHorizontalLinesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A11EC3718CCFCC000B77081 /* HUTransitionHorizontalLinesAnimator.m */; };
+		8A11EC3D18CCFCC000B77081 /* HUTransitionVerticalLinesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A11EC3918CCFCC000B77081 /* HUTransitionVerticalLinesAnimator.m */; };
+		8A11EC5518CCFCDD00B77081 /* UIViewController+Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A11EC4618CCFCDD00B77081 /* UIViewController+Animator.m */; };
+		8A11EC5918CCFCDD00B77081 /* ZBFallenBricksAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A11EC4E18CCFCDD00B77081 /* ZBFallenBricksAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8A11EB8D18CCF5AF00B77081 /* PBXContainerItemProxy */ = {
+		8A11EC1B18CCFBDC00B77081 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8A11EB5F18CCF5AF00B77081 /* Project object */;
+			containerPortal = 8A11EBEA18CCFBDB00B77081 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8A11EB6618CCF5AF00B77081;
+			remoteGlobalIDString = 8A11EBF118CCFBDB00B77081;
 			remoteInfo = TTMAnimatedTransitionGallery;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8A11EB6718CCF5AF00B77081 /* TTMAnimatedTransitionGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTMAnimatedTransitionGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A11EB6A18CCF5AF00B77081 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		8A11EB6C18CCF5AF00B77081 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		8A11EB6E18CCF5AF00B77081 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		8A11EB7218CCF5AF00B77081 /* TTMAnimatedTransitionGallery-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TTMAnimatedTransitionGallery-Info.plist"; sourceTree = "<group>"; };
-		8A11EB7418CCF5AF00B77081 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8A11EB7618CCF5AF00B77081 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8A11EB7818CCF5AF00B77081 /* TTMAnimatedTransitionGallery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TTMAnimatedTransitionGallery-Prefix.pch"; sourceTree = "<group>"; };
-		8A11EB7918CCF5AF00B77081 /* TTMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTMAppDelegate.h; sourceTree = "<group>"; };
-		8A11EB7A18CCF5AF00B77081 /* TTMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTMAppDelegate.m; sourceTree = "<group>"; };
-		8A11EB7D18CCF5AF00B77081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8A11EB7F18CCF5AF00B77081 /* TTMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTMViewController.h; sourceTree = "<group>"; };
-		8A11EB8018CCF5AF00B77081 /* TTMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTMViewController.m; sourceTree = "<group>"; };
-		8A11EB8218CCF5AF00B77081 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8A11EB8818CCF5AF00B77081 /* TTMAnimatedTransitionGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTMAnimatedTransitionGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A11EB8918CCF5AF00B77081 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		8A11EB9118CCF5AF00B77081 /* TTMAnimatedTransitionGalleryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TTMAnimatedTransitionGalleryTests-Info.plist"; sourceTree = "<group>"; };
-		8A11EB9318CCF5AF00B77081 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8A11EB9518CCF5AF00B77081 /* TTMAnimatedTransitionGalleryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTMAnimatedTransitionGalleryTests.m; sourceTree = "<group>"; };
+		8A11EBF218CCFBDB00B77081 /* TTMAnimatedTransitionGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTMAnimatedTransitionGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A11EBF518CCFBDB00B77081 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8A11EBF718CCFBDB00B77081 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8A11EBF918CCFBDB00B77081 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8A11EBFD18CCFBDC00B77081 /* TTMAnimatedTransitionGallery-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TTMAnimatedTransitionGallery-Info.plist"; sourceTree = "<group>"; };
+		8A11EBFF18CCFBDC00B77081 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A11EC0118CCFBDC00B77081 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A11EC0318CCFBDC00B77081 /* TTMAnimatedTransitionGallery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TTMAnimatedTransitionGallery-Prefix.pch"; sourceTree = "<group>"; };
+		8A11EC0418CCFBDC00B77081 /* TTMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTMAppDelegate.h; sourceTree = "<group>"; };
+		8A11EC0518CCFBDC00B77081 /* TTMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTMAppDelegate.m; sourceTree = "<group>"; };
+		8A11EC0818CCFBDC00B77081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A11EC0A18CCFBDC00B77081 /* TTMMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTMMasterViewController.h; sourceTree = "<group>"; };
+		8A11EC0B18CCFBDC00B77081 /* TTMMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTMMasterViewController.m; sourceTree = "<group>"; };
+		8A11EC0D18CCFBDC00B77081 /* TTMDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTMDetailViewController.h; sourceTree = "<group>"; };
+		8A11EC0E18CCFBDC00B77081 /* TTMDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTMDetailViewController.m; sourceTree = "<group>"; };
+		8A11EC1018CCFBDC00B77081 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8A11EC1618CCFBDC00B77081 /* TTMAnimatedTransitionGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTMAnimatedTransitionGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A11EC1718CCFBDC00B77081 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8A11EC1F18CCFBDC00B77081 /* TTMAnimatedTransitionGalleryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TTMAnimatedTransitionGalleryTests-Info.plist"; sourceTree = "<group>"; };
+		8A11EC2118CCFBDC00B77081 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A11EC2318CCFBDC00B77081 /* TTMAnimatedTransitionGalleryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTMAnimatedTransitionGalleryTests.m; sourceTree = "<group>"; };
+		8A11EC3218CCFCC000B77081 /* HUTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUTransitionAnimator.h; sourceTree = "<group>"; };
+		8A11EC3318CCFCC000B77081 /* HUTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUTransitionAnimator.m; sourceTree = "<group>"; };
+		8A11EC3418CCFCC000B77081 /* HUTransitionGhostAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUTransitionGhostAnimator.h; sourceTree = "<group>"; };
+		8A11EC3518CCFCC000B77081 /* HUTransitionGhostAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUTransitionGhostAnimator.m; sourceTree = "<group>"; };
+		8A11EC3618CCFCC000B77081 /* HUTransitionHorizontalLinesAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUTransitionHorizontalLinesAnimator.h; sourceTree = "<group>"; };
+		8A11EC3718CCFCC000B77081 /* HUTransitionHorizontalLinesAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUTransitionHorizontalLinesAnimator.m; sourceTree = "<group>"; };
+		8A11EC3818CCFCC000B77081 /* HUTransitionVerticalLinesAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUTransitionVerticalLinesAnimator.h; sourceTree = "<group>"; };
+		8A11EC3918CCFCC000B77081 /* HUTransitionVerticalLinesAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUTransitionVerticalLinesAnimator.m; sourceTree = "<group>"; };
+		8A11EC4518CCFCDD00B77081 /* UIViewController+Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Animator.h"; sourceTree = "<group>"; };
+		8A11EC4618CCFCDD00B77081 /* UIViewController+Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Animator.m"; sourceTree = "<group>"; };
+		8A11EC4D18CCFCDD00B77081 /* ZBFallenBricksAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBFallenBricksAnimator.h; sourceTree = "<group>"; };
+		8A11EC4E18CCFCDD00B77081 /* ZBFallenBricksAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBFallenBricksAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8A11EB6418CCF5AF00B77081 /* Frameworks */ = {
+		8A11EBEF18CCFBDB00B77081 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A11EB6D18CCF5AF00B77081 /* CoreGraphics.framework in Frameworks */,
-				8A11EB6F18CCF5AF00B77081 /* UIKit.framework in Frameworks */,
-				8A11EB6B18CCF5AF00B77081 /* Foundation.framework in Frameworks */,
+				8A11EBF818CCFBDB00B77081 /* CoreGraphics.framework in Frameworks */,
+				8A11EBFA18CCFBDB00B77081 /* UIKit.framework in Frameworks */,
+				8A11EBF618CCFBDB00B77081 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A11EB8518CCF5AF00B77081 /* Frameworks */ = {
+		8A11EC1318CCFBDC00B77081 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A11EB8A18CCF5AF00B77081 /* XCTest.framework in Frameworks */,
-				8A11EB8C18CCF5AF00B77081 /* UIKit.framework in Frameworks */,
-				8A11EB8B18CCF5AF00B77081 /* Foundation.framework in Frameworks */,
+				8A11EC1818CCFBDC00B77081 /* XCTest.framework in Frameworks */,
+				8A11EC1A18CCFBDC00B77081 /* UIKit.framework in Frameworks */,
+				8A11EC1918CCFBDC00B77081 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8A11EB5E18CCF5AF00B77081 = {
+		8A11EBE918CCFBDB00B77081 = {
 			isa = PBXGroup;
 			children = (
-				8A11EB7018CCF5AF00B77081 /* TTMAnimatedTransitionGallery */,
-				8A11EB8F18CCF5AF00B77081 /* TTMAnimatedTransitionGalleryTests */,
-				8A11EB6918CCF5AF00B77081 /* Frameworks */,
-				8A11EB6818CCF5AF00B77081 /* Products */,
+				8A11EC3018CCFCA100B77081 /* AnimatedTransitionings */,
+				8A11EBFB18CCFBDC00B77081 /* TTMAnimatedTransitionGallery */,
+				8A11EC1D18CCFBDC00B77081 /* TTMAnimatedTransitionGalleryTests */,
+				8A11EBF418CCFBDB00B77081 /* Frameworks */,
+				8A11EBF318CCFBDB00B77081 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8A11EB6818CCF5AF00B77081 /* Products */ = {
+		8A11EBF318CCFBDB00B77081 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8A11EB6718CCF5AF00B77081 /* TTMAnimatedTransitionGallery.app */,
-				8A11EB8818CCF5AF00B77081 /* TTMAnimatedTransitionGalleryTests.xctest */,
+				8A11EBF218CCFBDB00B77081 /* TTMAnimatedTransitionGallery.app */,
+				8A11EC1618CCFBDC00B77081 /* TTMAnimatedTransitionGalleryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8A11EB6918CCF5AF00B77081 /* Frameworks */ = {
+		8A11EBF418CCFBDB00B77081 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8A11EB6A18CCF5AF00B77081 /* Foundation.framework */,
-				8A11EB6C18CCF5AF00B77081 /* CoreGraphics.framework */,
-				8A11EB6E18CCF5AF00B77081 /* UIKit.framework */,
-				8A11EB8918CCF5AF00B77081 /* XCTest.framework */,
+				8A11EBF518CCFBDB00B77081 /* Foundation.framework */,
+				8A11EBF718CCFBDB00B77081 /* CoreGraphics.framework */,
+				8A11EBF918CCFBDB00B77081 /* UIKit.framework */,
+				8A11EC1718CCFBDC00B77081 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8A11EB7018CCF5AF00B77081 /* TTMAnimatedTransitionGallery */ = {
+		8A11EBFB18CCFBDC00B77081 /* TTMAnimatedTransitionGallery */ = {
 			isa = PBXGroup;
 			children = (
-				8A11EB7918CCF5AF00B77081 /* TTMAppDelegate.h */,
-				8A11EB7A18CCF5AF00B77081 /* TTMAppDelegate.m */,
-				8A11EB7C18CCF5AF00B77081 /* Main.storyboard */,
-				8A11EB7F18CCF5AF00B77081 /* TTMViewController.h */,
-				8A11EB8018CCF5AF00B77081 /* TTMViewController.m */,
-				8A11EB8218CCF5AF00B77081 /* Images.xcassets */,
-				8A11EB7118CCF5AF00B77081 /* Supporting Files */,
+				8A11EC0418CCFBDC00B77081 /* TTMAppDelegate.h */,
+				8A11EC0518CCFBDC00B77081 /* TTMAppDelegate.m */,
+				8A11EC0718CCFBDC00B77081 /* Main.storyboard */,
+				8A11EC0A18CCFBDC00B77081 /* TTMMasterViewController.h */,
+				8A11EC0B18CCFBDC00B77081 /* TTMMasterViewController.m */,
+				8A11EC0D18CCFBDC00B77081 /* TTMDetailViewController.h */,
+				8A11EC0E18CCFBDC00B77081 /* TTMDetailViewController.m */,
+				8A11EC1018CCFBDC00B77081 /* Images.xcassets */,
+				8A11EBFC18CCFBDC00B77081 /* Supporting Files */,
 			);
 			path = TTMAnimatedTransitionGallery;
 			sourceTree = "<group>";
 		};
-		8A11EB7118CCF5AF00B77081 /* Supporting Files */ = {
+		8A11EBFC18CCFBDC00B77081 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8A11EB7218CCF5AF00B77081 /* TTMAnimatedTransitionGallery-Info.plist */,
-				8A11EB7318CCF5AF00B77081 /* InfoPlist.strings */,
-				8A11EB7618CCF5AF00B77081 /* main.m */,
-				8A11EB7818CCF5AF00B77081 /* TTMAnimatedTransitionGallery-Prefix.pch */,
+				8A11EBFD18CCFBDC00B77081 /* TTMAnimatedTransitionGallery-Info.plist */,
+				8A11EBFE18CCFBDC00B77081 /* InfoPlist.strings */,
+				8A11EC0118CCFBDC00B77081 /* main.m */,
+				8A11EC0318CCFBDC00B77081 /* TTMAnimatedTransitionGallery-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8A11EB8F18CCF5AF00B77081 /* TTMAnimatedTransitionGalleryTests */ = {
+		8A11EC1D18CCFBDC00B77081 /* TTMAnimatedTransitionGalleryTests */ = {
 			isa = PBXGroup;
 			children = (
-				8A11EB9518CCF5AF00B77081 /* TTMAnimatedTransitionGalleryTests.m */,
-				8A11EB9018CCF5AF00B77081 /* Supporting Files */,
+				8A11EC2318CCFBDC00B77081 /* TTMAnimatedTransitionGalleryTests.m */,
+				8A11EC1E18CCFBDC00B77081 /* Supporting Files */,
 			);
 			path = TTMAnimatedTransitionGalleryTests;
 			sourceTree = "<group>";
 		};
-		8A11EB9018CCF5AF00B77081 /* Supporting Files */ = {
+		8A11EC1E18CCFBDC00B77081 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8A11EB9118CCF5AF00B77081 /* TTMAnimatedTransitionGalleryTests-Info.plist */,
-				8A11EB9218CCF5AF00B77081 /* InfoPlist.strings */,
+				8A11EC1F18CCFBDC00B77081 /* TTMAnimatedTransitionGalleryTests-Info.plist */,
+				8A11EC2018CCFBDC00B77081 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A11EC3018CCFCA100B77081 /* AnimatedTransitionings */ = {
+			isa = PBXGroup;
+			children = (
+				8A11EC3E18CCFCDD00B77081 /* ZBCustomTransitions */,
+				8A11EC3118CCFCC000B77081 /* HUAnimator */,
+			);
+			name = AnimatedTransitionings;
+			sourceTree = "<group>";
+		};
+		8A11EC3118CCFCC000B77081 /* HUAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				8A11EC3218CCFCC000B77081 /* HUTransitionAnimator.h */,
+				8A11EC3318CCFCC000B77081 /* HUTransitionAnimator.m */,
+				8A11EC3418CCFCC000B77081 /* HUTransitionGhostAnimator.h */,
+				8A11EC3518CCFCC000B77081 /* HUTransitionGhostAnimator.m */,
+				8A11EC3618CCFCC000B77081 /* HUTransitionHorizontalLinesAnimator.h */,
+				8A11EC3718CCFCC000B77081 /* HUTransitionHorizontalLinesAnimator.m */,
+				8A11EC3818CCFCC000B77081 /* HUTransitionVerticalLinesAnimator.h */,
+				8A11EC3918CCFCC000B77081 /* HUTransitionVerticalLinesAnimator.m */,
+			);
+			name = HUAnimator;
+			path = ../submodules/HUAnimator/HUAnimator;
+			sourceTree = "<group>";
+		};
+		8A11EC3E18CCFCDD00B77081 /* ZBCustomTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				8A11EC4518CCFCDD00B77081 /* UIViewController+Animator.h */,
+				8A11EC4618CCFCDD00B77081 /* UIViewController+Animator.m */,
+				8A11EC4D18CCFCDD00B77081 /* ZBFallenBricksAnimator.h */,
+				8A11EC4E18CCFCDD00B77081 /* ZBFallenBricksAnimator.m */,
+			);
+			name = ZBCustomTransitions;
+			path = ../submodules/ZBCustomTransitions/ZBCustomTransitions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8A11EB6618CCF5AF00B77081 /* TTMAnimatedTransitionGallery */ = {
+		8A11EBF118CCFBDB00B77081 /* TTMAnimatedTransitionGallery */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8A11EB9918CCF5AF00B77081 /* Build configuration list for PBXNativeTarget "TTMAnimatedTransitionGallery" */;
+			buildConfigurationList = 8A11EC2718CCFBDC00B77081 /* Build configuration list for PBXNativeTarget "TTMAnimatedTransitionGallery" */;
 			buildPhases = (
-				8A11EB6318CCF5AF00B77081 /* Sources */,
-				8A11EB6418CCF5AF00B77081 /* Frameworks */,
-				8A11EB6518CCF5AF00B77081 /* Resources */,
+				8A11EBEE18CCFBDB00B77081 /* Sources */,
+				8A11EBEF18CCFBDB00B77081 /* Frameworks */,
+				8A11EBF018CCFBDB00B77081 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -169,43 +230,43 @@
 			);
 			name = TTMAnimatedTransitionGallery;
 			productName = TTMAnimatedTransitionGallery;
-			productReference = 8A11EB6718CCF5AF00B77081 /* TTMAnimatedTransitionGallery.app */;
+			productReference = 8A11EBF218CCFBDB00B77081 /* TTMAnimatedTransitionGallery.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8A11EB8718CCF5AF00B77081 /* TTMAnimatedTransitionGalleryTests */ = {
+		8A11EC1518CCFBDC00B77081 /* TTMAnimatedTransitionGalleryTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8A11EB9C18CCF5AF00B77081 /* Build configuration list for PBXNativeTarget "TTMAnimatedTransitionGalleryTests" */;
+			buildConfigurationList = 8A11EC2A18CCFBDC00B77081 /* Build configuration list for PBXNativeTarget "TTMAnimatedTransitionGalleryTests" */;
 			buildPhases = (
-				8A11EB8418CCF5AF00B77081 /* Sources */,
-				8A11EB8518CCF5AF00B77081 /* Frameworks */,
-				8A11EB8618CCF5AF00B77081 /* Resources */,
+				8A11EC1218CCFBDC00B77081 /* Sources */,
+				8A11EC1318CCFBDC00B77081 /* Frameworks */,
+				8A11EC1418CCFBDC00B77081 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8A11EB8E18CCF5AF00B77081 /* PBXTargetDependency */,
+				8A11EC1C18CCFBDC00B77081 /* PBXTargetDependency */,
 			);
 			name = TTMAnimatedTransitionGalleryTests;
 			productName = TTMAnimatedTransitionGalleryTests;
-			productReference = 8A11EB8818CCF5AF00B77081 /* TTMAnimatedTransitionGalleryTests.xctest */;
+			productReference = 8A11EC1618CCFBDC00B77081 /* TTMAnimatedTransitionGalleryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8A11EB5F18CCF5AF00B77081 /* Project object */ = {
+		8A11EBEA18CCFBDB00B77081 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = TTM;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Shuichi Tsutsumi";
 				TargetAttributes = {
-					8A11EB8718CCF5AF00B77081 = {
-						TestTargetID = 8A11EB6618CCF5AF00B77081;
+					8A11EC1518CCFBDC00B77081 = {
+						TestTargetID = 8A11EBF118CCFBDB00B77081;
 					};
 				};
 			};
-			buildConfigurationList = 8A11EB6218CCF5AF00B77081 /* Build configuration list for PBXProject "TTMAnimatedTransitionGallery" */;
+			buildConfigurationList = 8A11EBED18CCFBDB00B77081 /* Build configuration list for PBXProject "TTMAnimatedTransitionGallery" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -213,88 +274,95 @@
 				en,
 				Base,
 			);
-			mainGroup = 8A11EB5E18CCF5AF00B77081;
-			productRefGroup = 8A11EB6818CCF5AF00B77081 /* Products */;
+			mainGroup = 8A11EBE918CCFBDB00B77081;
+			productRefGroup = 8A11EBF318CCFBDB00B77081 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8A11EB6618CCF5AF00B77081 /* TTMAnimatedTransitionGallery */,
-				8A11EB8718CCF5AF00B77081 /* TTMAnimatedTransitionGalleryTests */,
+				8A11EBF118CCFBDB00B77081 /* TTMAnimatedTransitionGallery */,
+				8A11EC1518CCFBDC00B77081 /* TTMAnimatedTransitionGalleryTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8A11EB6518CCF5AF00B77081 /* Resources */ = {
+		8A11EBF018CCFBDB00B77081 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A11EB8318CCF5AF00B77081 /* Images.xcassets in Resources */,
-				8A11EB7518CCF5AF00B77081 /* InfoPlist.strings in Resources */,
-				8A11EB7E18CCF5AF00B77081 /* Main.storyboard in Resources */,
+				8A11EC1118CCFBDC00B77081 /* Images.xcassets in Resources */,
+				8A11EC0018CCFBDC00B77081 /* InfoPlist.strings in Resources */,
+				8A11EC0918CCFBDC00B77081 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A11EB8618CCF5AF00B77081 /* Resources */ = {
+		8A11EC1418CCFBDC00B77081 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A11EB9418CCF5AF00B77081 /* InfoPlist.strings in Resources */,
+				8A11EC2218CCFBDC00B77081 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8A11EB6318CCF5AF00B77081 /* Sources */ = {
+		8A11EBEE18CCFBDB00B77081 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A11EB7B18CCF5AF00B77081 /* TTMAppDelegate.m in Sources */,
-				8A11EB8118CCF5AF00B77081 /* TTMViewController.m in Sources */,
-				8A11EB7718CCF5AF00B77081 /* main.m in Sources */,
+				8A11EC3C18CCFCC000B77081 /* HUTransitionHorizontalLinesAnimator.m in Sources */,
+				8A11EC3A18CCFCC000B77081 /* HUTransitionAnimator.m in Sources */,
+				8A11EC5518CCFCDD00B77081 /* UIViewController+Animator.m in Sources */,
+				8A11EC5918CCFCDD00B77081 /* ZBFallenBricksAnimator.m in Sources */,
+				8A11EC0618CCFBDC00B77081 /* TTMAppDelegate.m in Sources */,
+				8A11EC3D18CCFCC000B77081 /* HUTransitionVerticalLinesAnimator.m in Sources */,
+				8A11EC0218CCFBDC00B77081 /* main.m in Sources */,
+				8A11EC0C18CCFBDC00B77081 /* TTMMasterViewController.m in Sources */,
+				8A11EC0F18CCFBDC00B77081 /* TTMDetailViewController.m in Sources */,
+				8A11EC3B18CCFCC000B77081 /* HUTransitionGhostAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A11EB8418CCF5AF00B77081 /* Sources */ = {
+		8A11EC1218CCFBDC00B77081 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A11EB9618CCF5AF00B77081 /* TTMAnimatedTransitionGalleryTests.m in Sources */,
+				8A11EC2418CCFBDC00B77081 /* TTMAnimatedTransitionGalleryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8A11EB8E18CCF5AF00B77081 /* PBXTargetDependency */ = {
+		8A11EC1C18CCFBDC00B77081 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8A11EB6618CCF5AF00B77081 /* TTMAnimatedTransitionGallery */;
-			targetProxy = 8A11EB8D18CCF5AF00B77081 /* PBXContainerItemProxy */;
+			target = 8A11EBF118CCFBDB00B77081 /* TTMAnimatedTransitionGallery */;
+			targetProxy = 8A11EC1B18CCFBDC00B77081 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8A11EB7318CCF5AF00B77081 /* InfoPlist.strings */ = {
+		8A11EBFE18CCFBDC00B77081 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8A11EB7418CCF5AF00B77081 /* en */,
+				8A11EBFF18CCFBDC00B77081 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		8A11EB7C18CCF5AF00B77081 /* Main.storyboard */ = {
+		8A11EC0718CCFBDC00B77081 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8A11EB7D18CCF5AF00B77081 /* Base */,
+				8A11EC0818CCFBDC00B77081 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		8A11EB9218CCF5AF00B77081 /* InfoPlist.strings */ = {
+		8A11EC2018CCFBDC00B77081 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8A11EB9318CCF5AF00B77081 /* en */,
+				8A11EC2118CCFBDC00B77081 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -302,7 +370,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8A11EB9718CCF5AF00B77081 /* Debug */ = {
+		8A11EC2518CCFBDC00B77081 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -341,7 +409,7 @@
 			};
 			name = Debug;
 		};
-		8A11EB9818CCF5AF00B77081 /* Release */ = {
+		8A11EC2618CCFBDC00B77081 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -374,7 +442,7 @@
 			};
 			name = Release;
 		};
-		8A11EB9A18CCF5AF00B77081 /* Debug */ = {
+		8A11EC2818CCFBDC00B77081 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -387,7 +455,7 @@
 			};
 			name = Debug;
 		};
-		8A11EB9B18CCF5AF00B77081 /* Release */ = {
+		8A11EC2918CCFBDC00B77081 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -400,7 +468,7 @@
 			};
 			name = Release;
 		};
-		8A11EB9D18CCF5AF00B77081 /* Debug */ = {
+		8A11EC2B18CCFBDC00B77081 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
@@ -423,7 +491,7 @@
 			};
 			name = Debug;
 		};
-		8A11EB9E18CCF5AF00B77081 /* Release */ = {
+		8A11EC2C18CCFBDC00B77081 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
@@ -445,32 +513,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8A11EB6218CCF5AF00B77081 /* Build configuration list for PBXProject "TTMAnimatedTransitionGallery" */ = {
+		8A11EBED18CCFBDB00B77081 /* Build configuration list for PBXProject "TTMAnimatedTransitionGallery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8A11EB9718CCF5AF00B77081 /* Debug */,
-				8A11EB9818CCF5AF00B77081 /* Release */,
+				8A11EC2518CCFBDC00B77081 /* Debug */,
+				8A11EC2618CCFBDC00B77081 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8A11EB9918CCF5AF00B77081 /* Build configuration list for PBXNativeTarget "TTMAnimatedTransitionGallery" */ = {
+		8A11EC2718CCFBDC00B77081 /* Build configuration list for PBXNativeTarget "TTMAnimatedTransitionGallery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8A11EB9A18CCF5AF00B77081 /* Debug */,
-				8A11EB9B18CCF5AF00B77081 /* Release */,
+				8A11EC2818CCFBDC00B77081 /* Debug */,
+				8A11EC2918CCFBDC00B77081 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		8A11EB9C18CCF5AF00B77081 /* Build configuration list for PBXNativeTarget "TTMAnimatedTransitionGalleryTests" */ = {
+		8A11EC2A18CCFBDC00B77081 /* Build configuration list for PBXNativeTarget "TTMAnimatedTransitionGalleryTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8A11EB9D18CCF5AF00B77081 /* Debug */,
-				8A11EB9E18CCF5AF00B77081 /* Release */,
+				8A11EC2B18CCFBDC00B77081 /* Debug */,
+				8A11EC2C18CCFBDC00B77081 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8A11EB5F18CCF5AF00B77081 /* Project object */;
+	rootObject = 8A11EBEA18CCFBDB00B77081 /* Project object */;
 }
