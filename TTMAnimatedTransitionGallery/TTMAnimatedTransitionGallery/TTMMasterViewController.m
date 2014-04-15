@@ -9,23 +9,15 @@
 #import "TTMMasterViewController.h"
 #import "TTMDetailViewController.h"
 #import "HUTransitionAnimator.h"
-#import "ZBFallenBricksAnimator.h"
-
-
-typedef enum {
-    TransitionTypeNormal,
-    TransitionTypeVerticalLines,
-    TransitionTypeHorizontalLines,
-    TransitionTypeGravity,
-} TransitionType;
+#import "ATCAnimatedTransitioning.h"
+#import "LCZoomTransition.h"
+#import "CEReversibleAnimationController.h"
 
 
 @interface TTMMasterViewController ()
 <UINavigationControllerDelegate>
-{
-    TransitionType type;
-}
 @property (nonatomic, strong) NSArray *items;
+@property (nonatomic, strong) NSString *transitionClassName;
 @end
 
 
@@ -43,9 +35,23 @@ typedef enum {
     self.navigationController.delegate = self;
     
     self.items = @[
-                   @(TransitionTypeVerticalLines),
-                   @(TransitionTypeHorizontalLines),
-                   @(TransitionTypeGravity),
+                   @"HUTransitionVerticalLinesAnimator",
+                   @"HUTransitionHorizontalLinesAnimator",
+                   @"ZBFallenBricksAnimator",
+                   @"ATCAnimatedTransitioningFade",
+                   @"ATCAnimatedTransitioningBounce",
+                   @"ATCAnimatedTransitioningSquish",
+                   @"ATCAnimatedTransitioningFloat",
+                   @"LCZoomTransition",
+                   @"CECardsAnimationController",
+                   @"CECrossfadeAnimationController",
+                   @"CECubeAnimationController",
+                   @"CEExplodeAnimationController",
+                   @"CEFlipAnimationController",
+                   @"CEFoldAnimationController",
+                   @"CENatGeoAnimationController",
+                   @"CEPortalAnimationController",
+                   @"CETurnAnimationController",
                    ];
 }
 
@@ -83,7 +89,7 @@ typedef enum {
 
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
-        type = (TransitionType)[(NSNumber *)self.items[indexPath.row] unsignedIntegerValue];
+        self.transitionClassName = self.items[indexPath.row];
         
         [[segue destinationViewController] setDetailItem:self.items[indexPath.row]];
     }
@@ -98,25 +104,63 @@ typedef enum {
                                                fromViewController:(UIViewController *)fromVC
                                                  toViewController:(UIViewController *)toVC
 {
-    NSObject <UIViewControllerAnimatedTransitioning> *animator;
-
-    switch (type) {
-        case TransitionTypeVerticalLines:
-            animator = [[HUTransitionVerticalLinesAnimator alloc] init];
-            [(HUTransitionAnimator *)animator setPresenting:NO];
-            break;
-        case TransitionTypeHorizontalLines:
-            animator = [[HUTransitionHorizontalLinesAnimator alloc] init];
-            [(HUTransitionAnimator *)animator setPresenting:NO];
-            break;
-        case TransitionTypeGravity:
-            animator = [[ZBFallenBricksAnimator alloc] init];
-            break;
-        default:
-            animator = nil;
+    if (NSClassFromString(self.transitionClassName)) {
+        
+        Class aClass = NSClassFromString(self.transitionClassName);
+        id animator = [[aClass alloc] init];
+     
+        [self setupAnimator:animator
+               forOperation:operation];
+        
+        return animator;
     }
+    else {
+        return nil;
+    }
+}
+
+
+// =============================================================================
+#pragma mark - Private
+
+- (void)setupAnimator:(id)animator
+         forOperation:(UINavigationControllerOperation)operation
+{
     
-    return animator;
+    if ([animator isKindOfClass:[HUTransitionAnimator class]]) {
+        
+        if (operation == UINavigationControllerOperationPush) {
+            
+            [(HUTransitionAnimator *)animator setPresenting:YES];
+        }
+        else {
+            [(HUTransitionAnimator *)animator setPresenting:NO];
+        }
+    }
+    else if ([animator isKindOfClass:[ATCAnimatedTransitioning class]]) {
+        
+        [animator setIsPush:YES];
+        [animator setDuration:1.0];
+        
+        if (operation == UINavigationControllerOperationPush) {
+            
+            [animator setDismissal:NO];
+            [(ATCAnimatedTransitioning *)animator setDirection:ATCTransitionAnimationDirectionRight];
+        }
+        else {
+            [animator setDismissal:YES];
+            [(ATCAnimatedTransitioning *)animator setDirection:ATCTransitionAnimationDirectionLeft];
+        }
+    }
+    else if ([animator isKindOfClass:[LCZoomTransition class]]) {
+        
+        [(LCZoomTransition *)animator setTransitionDuration:0.5];
+        [(LCZoomTransition *)animator setOperation:operation];
+    }
+    else if ([animator isKindOfClass:[CEReversibleAnimationController class]]) {
+        
+        [(CEReversibleAnimationController *)animator setReverse:(operation == UINavigationControllerOperationPop)];
+    }
 }
 
 
@@ -124,20 +168,6 @@ typedef enum {
 #pragma mark - IBAction
 
 - (IBAction)pop:(UIButton *)sender {
-    
-    switch (sender.tag) {
-        case 0:
-            type = TransitionTypeVerticalLines;
-            break;
-            
-        case 1:
-            type = TransitionTypeHorizontalLines;
-            break;
-            
-        case 2:
-            type = TransitionTypeGravity;
-            break;
-    }
     
     [self.navigationController popViewControllerAnimated:YES];
 }

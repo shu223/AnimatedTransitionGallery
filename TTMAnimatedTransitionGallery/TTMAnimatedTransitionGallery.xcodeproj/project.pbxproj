@@ -28,6 +28,23 @@
 		8A11EC3D18CCFCC000B77081 /* HUTransitionVerticalLinesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A11EC3918CCFCC000B77081 /* HUTransitionVerticalLinesAnimator.m */; };
 		8A11EC5518CCFCDD00B77081 /* UIViewController+Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A11EC4618CCFCDD00B77081 /* UIViewController+Animator.m */; };
 		8A11EC5918CCFCDD00B77081 /* ZBFallenBricksAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A11EC4E18CCFCDD00B77081 /* ZBFallenBricksAnimator.m */; };
+		8A6E7F1F18FD2B5A00AFC158 /* ATCAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F1418FD2B5A00AFC158 /* ATCAnimatedTransitioning.m */; };
+		8A6E7F2018FD2B5A00AFC158 /* ATCAnimatedTransitioningBounce.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F1618FD2B5A00AFC158 /* ATCAnimatedTransitioningBounce.m */; };
+		8A6E7F2118FD2B5A00AFC158 /* ATCAnimatedTransitioningFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F1818FD2B5A00AFC158 /* ATCAnimatedTransitioningFade.m */; };
+		8A6E7F2218FD2B5A00AFC158 /* ATCAnimatedTransitioningFloat.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F1A18FD2B5A00AFC158 /* ATCAnimatedTransitioningFloat.m */; };
+		8A6E7F2318FD2B5A00AFC158 /* ATCAnimatedTransitioningSquish.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F1C18FD2B5A00AFC158 /* ATCAnimatedTransitioningSquish.m */; };
+		8A6E7F2418FD2B5A00AFC158 /* ATCTransitioningDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F1E18FD2B5A00AFC158 /* ATCTransitioningDelegate.m */; };
+		8A6E7F2818FD374700AFC158 /* LCZoomTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F2718FD374700AFC158 /* LCZoomTransition.m */; };
+		8A6E7F3E18FD394000AFC158 /* CECardsAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F2B18FD394000AFC158 /* CECardsAnimationController.m */; };
+		8A6E7F3F18FD394000AFC158 /* CECrossfadeAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F2D18FD394000AFC158 /* CECrossfadeAnimationController.m */; };
+		8A6E7F4018FD394000AFC158 /* CECubeAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F2F18FD394000AFC158 /* CECubeAnimationController.m */; };
+		8A6E7F4118FD394000AFC158 /* CEExplodeAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F3118FD394000AFC158 /* CEExplodeAnimationController.m */; };
+		8A6E7F4218FD394000AFC158 /* CEFlipAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F3318FD394000AFC158 /* CEFlipAnimationController.m */; };
+		8A6E7F4318FD394000AFC158 /* CEFoldAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F3518FD394000AFC158 /* CEFoldAnimationController.m */; };
+		8A6E7F4418FD394000AFC158 /* CENatGeoAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F3718FD394000AFC158 /* CENatGeoAnimationController.m */; };
+		8A6E7F4518FD394000AFC158 /* CEPortalAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F3918FD394000AFC158 /* CEPortalAnimationController.m */; };
+		8A6E7F4618FD394000AFC158 /* CEReversibleAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F3B18FD394000AFC158 /* CEReversibleAnimationController.m */; };
+		8A6E7F4718FD394000AFC158 /* CETurnAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F3D18FD394000AFC158 /* CETurnAnimationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +91,40 @@
 		8A11EC4618CCFCDD00B77081 /* UIViewController+Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Animator.m"; sourceTree = "<group>"; };
 		8A11EC4D18CCFCDD00B77081 /* ZBFallenBricksAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBFallenBricksAnimator.h; sourceTree = "<group>"; };
 		8A11EC4E18CCFCDD00B77081 /* ZBFallenBricksAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBFallenBricksAnimator.m; sourceTree = "<group>"; };
+		8A6E7F1318FD2B5A00AFC158 /* ATCAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATCAnimatedTransitioning.h; sourceTree = "<group>"; };
+		8A6E7F1418FD2B5A00AFC158 /* ATCAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATCAnimatedTransitioning.m; sourceTree = "<group>"; };
+		8A6E7F1518FD2B5A00AFC158 /* ATCAnimatedTransitioningBounce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATCAnimatedTransitioningBounce.h; sourceTree = "<group>"; };
+		8A6E7F1618FD2B5A00AFC158 /* ATCAnimatedTransitioningBounce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATCAnimatedTransitioningBounce.m; sourceTree = "<group>"; };
+		8A6E7F1718FD2B5A00AFC158 /* ATCAnimatedTransitioningFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATCAnimatedTransitioningFade.h; sourceTree = "<group>"; };
+		8A6E7F1818FD2B5A00AFC158 /* ATCAnimatedTransitioningFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATCAnimatedTransitioningFade.m; sourceTree = "<group>"; };
+		8A6E7F1918FD2B5A00AFC158 /* ATCAnimatedTransitioningFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATCAnimatedTransitioningFloat.h; sourceTree = "<group>"; };
+		8A6E7F1A18FD2B5A00AFC158 /* ATCAnimatedTransitioningFloat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATCAnimatedTransitioningFloat.m; sourceTree = "<group>"; };
+		8A6E7F1B18FD2B5A00AFC158 /* ATCAnimatedTransitioningSquish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATCAnimatedTransitioningSquish.h; sourceTree = "<group>"; };
+		8A6E7F1C18FD2B5A00AFC158 /* ATCAnimatedTransitioningSquish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATCAnimatedTransitioningSquish.m; sourceTree = "<group>"; };
+		8A6E7F1D18FD2B5A00AFC158 /* ATCTransitioningDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATCTransitioningDelegate.h; sourceTree = "<group>"; };
+		8A6E7F1E18FD2B5A00AFC158 /* ATCTransitioningDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATCTransitioningDelegate.m; sourceTree = "<group>"; };
+		8A6E7F2618FD374700AFC158 /* LCZoomTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCZoomTransition.h; sourceTree = "<group>"; };
+		8A6E7F2718FD374700AFC158 /* LCZoomTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCZoomTransition.m; sourceTree = "<group>"; };
+		8A6E7F2A18FD394000AFC158 /* CECardsAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CECardsAnimationController.h; sourceTree = "<group>"; };
+		8A6E7F2B18FD394000AFC158 /* CECardsAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CECardsAnimationController.m; sourceTree = "<group>"; };
+		8A6E7F2C18FD394000AFC158 /* CECrossfadeAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CECrossfadeAnimationController.h; sourceTree = "<group>"; };
+		8A6E7F2D18FD394000AFC158 /* CECrossfadeAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CECrossfadeAnimationController.m; sourceTree = "<group>"; };
+		8A6E7F2E18FD394000AFC158 /* CECubeAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CECubeAnimationController.h; sourceTree = "<group>"; };
+		8A6E7F2F18FD394000AFC158 /* CECubeAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CECubeAnimationController.m; sourceTree = "<group>"; };
+		8A6E7F3018FD394000AFC158 /* CEExplodeAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEExplodeAnimationController.h; sourceTree = "<group>"; };
+		8A6E7F3118FD394000AFC158 /* CEExplodeAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEExplodeAnimationController.m; sourceTree = "<group>"; };
+		8A6E7F3218FD394000AFC158 /* CEFlipAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEFlipAnimationController.h; sourceTree = "<group>"; };
+		8A6E7F3318FD394000AFC158 /* CEFlipAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEFlipAnimationController.m; sourceTree = "<group>"; };
+		8A6E7F3418FD394000AFC158 /* CEFoldAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEFoldAnimationController.h; sourceTree = "<group>"; };
+		8A6E7F3518FD394000AFC158 /* CEFoldAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEFoldAnimationController.m; sourceTree = "<group>"; };
+		8A6E7F3618FD394000AFC158 /* CENatGeoAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CENatGeoAnimationController.h; sourceTree = "<group>"; };
+		8A6E7F3718FD394000AFC158 /* CENatGeoAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CENatGeoAnimationController.m; sourceTree = "<group>"; };
+		8A6E7F3818FD394000AFC158 /* CEPortalAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEPortalAnimationController.h; sourceTree = "<group>"; };
+		8A6E7F3918FD394000AFC158 /* CEPortalAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEPortalAnimationController.m; sourceTree = "<group>"; };
+		8A6E7F3A18FD394000AFC158 /* CEReversibleAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEReversibleAnimationController.h; sourceTree = "<group>"; };
+		8A6E7F3B18FD394000AFC158 /* CEReversibleAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEReversibleAnimationController.m; sourceTree = "<group>"; };
+		8A6E7F3C18FD394000AFC158 /* CETurnAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CETurnAnimationController.h; sourceTree = "<group>"; };
+		8A6E7F3D18FD394000AFC158 /* CETurnAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CETurnAnimationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +230,9 @@
 		8A11EC3018CCFCA100B77081 /* AnimatedTransitionings */ = {
 			isa = PBXGroup;
 			children = (
+				8A6E7F2918FD394000AFC158 /* AnimationControllers */,
+				8A6E7F2518FD374700AFC158 /* LCZoomTransition */,
+				8A6E7F1218FD2B5A00AFC158 /* ATCAnimatedTransitions */,
 				8A11EC3E18CCFCDD00B77081 /* ZBCustomTransitions */,
 				8A11EC3118CCFCC000B77081 /* HUAnimator */,
 			);
@@ -211,6 +265,64 @@
 			);
 			name = ZBCustomTransitions;
 			path = ../submodules/ZBCustomTransitions/ZBCustomTransitions;
+			sourceTree = "<group>";
+		};
+		8A6E7F1218FD2B5A00AFC158 /* ATCAnimatedTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				8A6E7F1318FD2B5A00AFC158 /* ATCAnimatedTransitioning.h */,
+				8A6E7F1418FD2B5A00AFC158 /* ATCAnimatedTransitioning.m */,
+				8A6E7F1518FD2B5A00AFC158 /* ATCAnimatedTransitioningBounce.h */,
+				8A6E7F1618FD2B5A00AFC158 /* ATCAnimatedTransitioningBounce.m */,
+				8A6E7F1718FD2B5A00AFC158 /* ATCAnimatedTransitioningFade.h */,
+				8A6E7F1818FD2B5A00AFC158 /* ATCAnimatedTransitioningFade.m */,
+				8A6E7F1918FD2B5A00AFC158 /* ATCAnimatedTransitioningFloat.h */,
+				8A6E7F1A18FD2B5A00AFC158 /* ATCAnimatedTransitioningFloat.m */,
+				8A6E7F1B18FD2B5A00AFC158 /* ATCAnimatedTransitioningSquish.h */,
+				8A6E7F1C18FD2B5A00AFC158 /* ATCAnimatedTransitioningSquish.m */,
+				8A6E7F1D18FD2B5A00AFC158 /* ATCTransitioningDelegate.h */,
+				8A6E7F1E18FD2B5A00AFC158 /* ATCTransitioningDelegate.m */,
+			);
+			name = ATCAnimatedTransitions;
+			path = "../submodules/Animated-Transition-Collection/Source";
+			sourceTree = "<group>";
+		};
+		8A6E7F2518FD374700AFC158 /* LCZoomTransition */ = {
+			isa = PBXGroup;
+			children = (
+				8A6E7F2618FD374700AFC158 /* LCZoomTransition.h */,
+				8A6E7F2718FD374700AFC158 /* LCZoomTransition.m */,
+			);
+			name = LCZoomTransition;
+			path = ../submodules/LCZoomTransition/LCZoomTransition;
+			sourceTree = "<group>";
+		};
+		8A6E7F2918FD394000AFC158 /* AnimationControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8A6E7F2A18FD394000AFC158 /* CECardsAnimationController.h */,
+				8A6E7F2B18FD394000AFC158 /* CECardsAnimationController.m */,
+				8A6E7F2C18FD394000AFC158 /* CECrossfadeAnimationController.h */,
+				8A6E7F2D18FD394000AFC158 /* CECrossfadeAnimationController.m */,
+				8A6E7F2E18FD394000AFC158 /* CECubeAnimationController.h */,
+				8A6E7F2F18FD394000AFC158 /* CECubeAnimationController.m */,
+				8A6E7F3018FD394000AFC158 /* CEExplodeAnimationController.h */,
+				8A6E7F3118FD394000AFC158 /* CEExplodeAnimationController.m */,
+				8A6E7F3218FD394000AFC158 /* CEFlipAnimationController.h */,
+				8A6E7F3318FD394000AFC158 /* CEFlipAnimationController.m */,
+				8A6E7F3418FD394000AFC158 /* CEFoldAnimationController.h */,
+				8A6E7F3518FD394000AFC158 /* CEFoldAnimationController.m */,
+				8A6E7F3618FD394000AFC158 /* CENatGeoAnimationController.h */,
+				8A6E7F3718FD394000AFC158 /* CENatGeoAnimationController.m */,
+				8A6E7F3818FD394000AFC158 /* CEPortalAnimationController.h */,
+				8A6E7F3918FD394000AFC158 /* CEPortalAnimationController.m */,
+				8A6E7F3A18FD394000AFC158 /* CEReversibleAnimationController.h */,
+				8A6E7F3B18FD394000AFC158 /* CEReversibleAnimationController.m */,
+				8A6E7F3C18FD394000AFC158 /* CETurnAnimationController.h */,
+				8A6E7F3D18FD394000AFC158 /* CETurnAnimationController.m */,
+			);
+			name = AnimationControllers;
+			path = ../submodules/VCTransitionsLibrary/AnimationControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,14 +423,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A6E7F4518FD394000AFC158 /* CEPortalAnimationController.m in Sources */,
 				8A11EC3C18CCFCC000B77081 /* HUTransitionHorizontalLinesAnimator.m in Sources */,
+				8A6E7F2418FD2B5A00AFC158 /* ATCTransitioningDelegate.m in Sources */,
+				8A6E7F4718FD394000AFC158 /* CETurnAnimationController.m in Sources */,
 				8A11EC3A18CCFCC000B77081 /* HUTransitionAnimator.m in Sources */,
+				8A6E7F2218FD2B5A00AFC158 /* ATCAnimatedTransitioningFloat.m in Sources */,
 				8A11EC5518CCFCDD00B77081 /* UIViewController+Animator.m in Sources */,
+				8A6E7F2818FD374700AFC158 /* LCZoomTransition.m in Sources */,
+				8A6E7F3F18FD394000AFC158 /* CECrossfadeAnimationController.m in Sources */,
+				8A6E7F2318FD2B5A00AFC158 /* ATCAnimatedTransitioningSquish.m in Sources */,
 				8A11EC5918CCFCDD00B77081 /* ZBFallenBricksAnimator.m in Sources */,
+				8A6E7F2118FD2B5A00AFC158 /* ATCAnimatedTransitioningFade.m in Sources */,
+				8A6E7F4318FD394000AFC158 /* CEFoldAnimationController.m in Sources */,
 				8A11EC0618CCFBDC00B77081 /* TTMAppDelegate.m in Sources */,
 				8A11EC3D18CCFCC000B77081 /* HUTransitionVerticalLinesAnimator.m in Sources */,
+				8A6E7F2018FD2B5A00AFC158 /* ATCAnimatedTransitioningBounce.m in Sources */,
+				8A6E7F4218FD394000AFC158 /* CEFlipAnimationController.m in Sources */,
+				8A6E7F4018FD394000AFC158 /* CECubeAnimationController.m in Sources */,
+				8A6E7F4118FD394000AFC158 /* CEExplodeAnimationController.m in Sources */,
 				8A11EC0218CCFBDC00B77081 /* main.m in Sources */,
+				8A6E7F4618FD394000AFC158 /* CEReversibleAnimationController.m in Sources */,
+				8A6E7F4418FD394000AFC158 /* CENatGeoAnimationController.m in Sources */,
 				8A11EC0C18CCFBDC00B77081 /* TTMMasterViewController.m in Sources */,
+				8A6E7F3E18FD394000AFC158 /* CECardsAnimationController.m in Sources */,
+				8A6E7F1F18FD2B5A00AFC158 /* ATCAnimatedTransitioning.m in Sources */,
 				8A11EC0F18CCFBDC00B77081 /* TTMDetailViewController.m in Sources */,
 				8A11EC3B18CCFCC000B77081 /* HUTransitionGhostAnimator.m in Sources */,
 			);
@@ -529,6 +658,7 @@
 				8A11EC2918CCFBDC00B77081 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A11EC2A18CCFBDC00B77081 /* Build configuration list for PBXNativeTarget "TTMAnimatedTransitionGalleryTests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +667,7 @@
 				8A11EC2C18CCFBDC00B77081 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
