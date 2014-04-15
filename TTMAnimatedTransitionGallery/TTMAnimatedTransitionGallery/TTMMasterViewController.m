@@ -12,12 +12,14 @@
 #import "ATCAnimatedTransitioning.h"
 #import "LCZoomTransition.h"
 #import "CEReversibleAnimationController.h"
+#import "ADTransitionController.h"
 
 
 @interface TTMMasterViewController ()
 <UINavigationControllerDelegate>
 @property (nonatomic, strong) NSArray *items;
 @property (nonatomic, strong) NSString *transitionClassName;
+@property (nonatomic, strong) id animator;
 @end
 
 
@@ -59,6 +61,23 @@
                    @"ATCAnimatedTransitioningSquish",
                    @"ATCAnimatedTransitioningFloat",
                    @"LCZoomTransition",
+                   @"ADBackFadeTransition",
+                   @"ADCarrouselTransition",
+                   @"ADCrossTransition",
+                   @"ADCubeTransition",
+                   @"ADFadeTransition",
+                   @"ADFlipTransition",
+                   @"ADFoldTransition",
+                   @"ADGhostTransition",
+                   @"ADGlueTransition",
+                   @"ADModernPushTransition",
+                   @"ADPushRotateTransition",
+                   @"ADScaleTransition",
+                   @"ADSlideTransition",
+                   @"ADSwapTransition",
+                   @"ADSwipeFadeTransition",
+                   @"ADSwipeTransition",
+                   @"ADZoomTransition",
                    @"CECardsAnimationController",
                    @"CECrossfadeAnimationController",
                    @"CECubeAnimationController",
@@ -123,12 +142,13 @@
     if (NSClassFromString(self.transitionClassName)) {
         
         Class aClass = NSClassFromString(self.transitionClassName);
-        id animator = [[aClass alloc] init];
+        self.animator = [[aClass alloc] init];
+
      
-        [self setupAnimator:animator
+        [self setupAnimator:self.animator
                forOperation:operation];
         
-        return animator;
+        return self.animator;
     }
     else {
         return nil;
@@ -177,6 +197,33 @@
         
         [(CEReversibleAnimationController *)animator setReverse:(operation == UINavigationControllerOperationPop)];
     }
+    else if ([self.animator isKindOfClass:[ADTransition class]]) {
+        
+        ADTransition *transition = self.animator;
+        
+        Class aClass = [transition class];
+        
+        if ([transition respondsToSelector:@selector(initWithDuration:orientation:sourceRect:)]) {
+            
+            transition = [[aClass alloc] initWithDuration:0.5f
+                                              orientation:ADTransitionRightToLeft
+                                               sourceRect:self.tableView.bounds];
+        }
+        else if ([transition respondsToSelector:@selector(initWithDuration:sourceRect:)]) {
+            
+            transition = [[aClass alloc] initWithDuration:0.5f
+                                               sourceRect:self.tableView.bounds];
+        }
+        else {
+            
+            transition = [[aClass alloc] initWithDuration:0.5f];
+        }
+        
+        self.animator = [[ADTransitioningDelegate alloc] initWithTransition:transition];
+    }
+    
+    
+    
 }
 
 

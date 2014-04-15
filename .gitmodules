@@ -16,3 +16,6 @@
 [submodule "submodules/ZBCustomTransitions"]
 	path = submodules/ZBCustomTransitions
 	url = https://github.com/zonble/ZBCustomTransitions
+[submodule "submodules/KWTransition"]
+	path = submodules/KWTransition
+	url = git@github.com:KurtWagner/KWTransition.git
