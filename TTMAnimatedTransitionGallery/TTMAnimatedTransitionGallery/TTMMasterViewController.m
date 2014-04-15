@@ -35,23 +35,14 @@
     UIView *backgroundView = [[UIView alloc] initWithFrame:self.tableView.bounds];
     CAGradientLayer *gradient = [CAGradientLayer layer];
     gradient.frame = backgroundView.bounds;
-    UIColor *startColor = [UIColor colorWithRed:90./255.
+    UIColor *startColor = [UIColor colorWithRed: 90./255.
                                           green:200./255.
                                            blue:251./255.
                                           alpha:1.0];
-    UIColor *endColor =   [UIColor colorWithRed:82./255.
+    UIColor *endColor   = [UIColor colorWithRed: 82./255.
                                           green:237./255.
                                            blue:199./255.
                                           alpha:1.0];
-
-//    UIColor *startColor = [UIColor colorWithRed:29./255.
-//                                          green:119./255.
-//                                           blue:239./255.
-//                                          alpha:1.0];
-//    UIColor *endColor = [UIColor colorWithRed:129./255.
-//                                        green:243./255.
-//                                         blue:253./255.
-//                                        alpha:1.0];
     
     gradient.colors = @[(id)startColor.CGColor, (id)endColor.CGColor];
     [backgroundView.layer addSublayer:gradient];

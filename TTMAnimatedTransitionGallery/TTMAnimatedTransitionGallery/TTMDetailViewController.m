@@ -45,12 +45,12 @@
     
     UIColor *startColor = [UIColor colorWithRed:1.
                                           green:149./255.
-                                           blue:0./255.
-                                          alpha:1.0];
-    UIColor *endColor    = [UIColor colorWithRed:1.
-                                           green:94./255.
-                                            blue:58./255.
-                                           alpha:1.0];
+                                           blue:0.
+                                          alpha:1.];
+    UIColor *endColor   = [UIColor colorWithRed:1.
+                                          green:94./255.
+                                           blue:58./255.
+                                          alpha:1.];
 
     gradient.colors = @[(id)startColor.CGColor, (id)endColor.CGColor];
     [self.view.layer insertSublayer:gradient atIndex:0];
