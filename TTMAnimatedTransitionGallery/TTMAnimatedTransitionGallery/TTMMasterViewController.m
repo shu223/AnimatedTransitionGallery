@@ -13,6 +13,7 @@
 #import "LCZoomTransition.h"
 #import "CEReversibleAnimationController.h"
 #import "ADTransitionController.h"
+#import "KWTransitionHelper.h"
 
 
 @interface TTMMasterViewController ()
@@ -88,6 +89,16 @@
                    @"CENatGeoAnimationController",
                    @"CEPortalAnimationController",
                    @"CETurnAnimationController",
+                   KWTransitionStyleNameRotateFromTop,
+                   KWTransitionStyleNameFadeBackOver,
+                   KWTransitionStyleNameBounceIn,
+                   KWTransitionStyleNameDropOut,
+                   KWTransitionStyleNameStepBackScroll,
+                   KWTransitionStyleNameStepBackSwipe,
+                   KWTransitionStyleNameUp,
+                   KWTransitionStyleNamePushUp,
+                   KWTransitionStyleNameFall,
+                   KWTransitionStyleNameSink,
                    ];
 }
 
@@ -140,26 +151,36 @@
                                                fromViewController:(UIViewController *)fromVC
                                                  toViewController:(UIViewController *)toVC
 {
+    self.animator = nil;
+
     if (NSClassFromString(self.transitionClassName)) {
         
         Class aClass = NSClassFromString(self.transitionClassName);
         self.animator = [[aClass alloc] init];
+    }
+    // only for KWTransition
+    else if ([self.transitionClassName hasPrefix:@"KWTransition"]) {
+        
+        KWTransition *transition = [[KWTransition alloc] init];
+        transition.style = [KWTransitionHelper styleForTransitionName:self.transitionClassName];
 
-     
+        self.animator = transition;
+    }
+    
+    if (self.animator) {
+
         [self setupAnimator:self.animator
                forOperation:operation];
-        
-        return self.animator;
     }
-    else {
-        return nil;
-    }
+    
+    return self.animator;
 }
 
 
 // =============================================================================
 #pragma mark - Private
 
+// setup for each OSS
 - (void)setupAnimator:(id)animator
          forOperation:(UINavigationControllerOperation)operation
 {
@@ -221,9 +242,21 @@
         
         self.animator = [[ADTransitioningDelegate alloc] initWithTransition:transition];
     }
-    
-    
-    
+    // KWTransition
+    else if ([self.animator isKindOfClass:[KWTransition class]]) {
+        
+        if (operation == UINavigationControllerOperationPush) {
+            
+            [(KWTransition *)animator setAction:KWTransitionStepPresent];
+        }
+        else {
+            [(KWTransition *)animator setAction:KWTransitionStepDismiss];
+        }
+        
+        if ([(KWTransition *)self.animator style] == KWTransitionStyleSink) {
+            [(KWTransition *)self.animator setSettings:KWTransitionSettingDirectionDown];
+        }
+    }
 }
 
 

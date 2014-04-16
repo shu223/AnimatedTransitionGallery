@@ -70,6 +70,8 @@
 		8A6E7FDD18FD581200AFC158 /* ADTransitioningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7FC218FD581200AFC158 /* ADTransitioningViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8A6E7FDE18FD581200AFC158 /* ADZoomTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7FC418FD581200AFC158 /* ADZoomTransition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8A6E7FDF18FD581200AFC158 /* UIViewController+ADTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7FC618FD581200AFC158 /* UIViewController+ADTransitionController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8A6E801918FE272E00AFC158 /* KWTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7FF018FE272E00AFC158 /* KWTransition.m */; };
+		8A6E803B18FE290E00AFC158 /* KWTransitionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E803A18FE290E00AFC158 /* KWTransitionHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -200,6 +202,10 @@
 		8A6E7FC418FD581200AFC158 /* ADZoomTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADZoomTransition.m; sourceTree = "<group>"; };
 		8A6E7FC518FD581200AFC158 /* UIViewController+ADTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ADTransitionController.h"; sourceTree = "<group>"; };
 		8A6E7FC618FD581200AFC158 /* UIViewController+ADTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ADTransitionController.m"; sourceTree = "<group>"; };
+		8A6E7FEF18FE272E00AFC158 /* KWTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWTransition.h; sourceTree = "<group>"; };
+		8A6E7FF018FE272E00AFC158 /* KWTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWTransition.m; sourceTree = "<group>"; };
+		8A6E803918FE290E00AFC158 /* KWTransitionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWTransitionHelper.h; sourceTree = "<group>"; };
+		8A6E803A18FE290E00AFC158 /* KWTransitionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWTransitionHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +273,8 @@
 				8A11EC0B18CCFBDC00B77081 /* TTMMasterViewController.m */,
 				8A11EC0D18CCFBDC00B77081 /* TTMDetailViewController.h */,
 				8A11EC0E18CCFBDC00B77081 /* TTMDetailViewController.m */,
+				8A6E803918FE290E00AFC158 /* KWTransitionHelper.h */,
+				8A6E803A18FE290E00AFC158 /* KWTransitionHelper.m */,
 				8A11EC1018CCFBDC00B77081 /* Images.xcassets */,
 				8A11EBFC18CCFBDC00B77081 /* Supporting Files */,
 			);
@@ -305,6 +313,7 @@
 		8A11EC3018CCFCA100B77081 /* AnimatedTransitionings */ = {
 			isa = PBXGroup;
 			children = (
+				8A6E7FED18FE272E00AFC158 /* KWTransition */,
 				8A6E7F9418FD581200AFC158 /* ADTransitionController */,
 				8A6E7F2918FD394000AFC158 /* AnimationControllers */,
 				8A6E7F2518FD374700AFC158 /* LCZoomTransition */,
@@ -459,6 +468,16 @@
 			path = ../submodules/ADTransitionController/ADTransitionController;
 			sourceTree = "<group>";
 		};
+		8A6E7FED18FE272E00AFC158 /* KWTransition */ = {
+			isa = PBXGroup;
+			children = (
+				8A6E7FEF18FE272E00AFC158 /* KWTransition.h */,
+				8A6E7FF018FE272E00AFC158 /* KWTransition.m */,
+			);
+			name = KWTransition;
+			path = ../submodules/KWTransition;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -569,6 +588,7 @@
 				8A11EC3A18CCFCC000B77081 /* HUTransitionAnimator.m in Sources */,
 				8A6E7F2218FD2B5A00AFC158 /* ATCAnimatedTransitioningFloat.m in Sources */,
 				8A11EC5518CCFCDD00B77081 /* UIViewController+Animator.m in Sources */,
+				8A6E801918FE272E00AFC158 /* KWTransition.m in Sources */,
 				8A6E7F2818FD374700AFC158 /* LCZoomTransition.m in Sources */,
 				8A6E7FD518FD581200AFC158 /* ADSlideTransition.m in Sources */,
 				8A6E7F3F18FD394000AFC158 /* CECrossfadeAnimationController.m in Sources */,
@@ -608,6 +628,7 @@
 				8A11EC0F18CCFBDC00B77081 /* TTMDetailViewController.m in Sources */,
 				8A6E7FCB18FD581200AFC158 /* ADDualTransition.m in Sources */,
 				8A6E7FD218FD581200AFC158 /* ADNavigationControllerDelegate.m in Sources */,
+				8A6E803B18FE290E00AFC158 /* KWTransitionHelper.m in Sources */,
 				8A11EC3B18CCFCC000B77081 /* HUTransitionGhostAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
