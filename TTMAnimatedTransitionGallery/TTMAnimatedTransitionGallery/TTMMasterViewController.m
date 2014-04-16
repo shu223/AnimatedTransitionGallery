@@ -55,6 +55,7 @@
     self.items = @[
                    @"HUTransitionVerticalLinesAnimator",
                    @"HUTransitionHorizontalLinesAnimator",
+                   @"HUTransitionGhostAnimator",
                    @"ZBFallenBricksAnimator",
                    @"ATCAnimatedTransitioningFade",
                    @"ATCAnimatedTransitioningBounce",
@@ -162,7 +163,6 @@
 - (void)setupAnimator:(id)animator
          forOperation:(UINavigationControllerOperation)operation
 {
-    
     if ([animator isKindOfClass:[HUTransitionAnimator class]]) {
         
         if (operation == UINavigationControllerOperationPush) {
@@ -175,8 +175,8 @@
     }
     else if ([animator isKindOfClass:[ATCAnimatedTransitioning class]]) {
         
-        [animator setIsPush:YES];
-        [animator setDuration:1.0];
+        [(ATCAnimatedTransitioning *)animator setIsPush:YES];
+        [(ATCAnimatedTransitioning *)animator setDuration:1.0];
         
         if (operation == UINavigationControllerOperationPush) {
             
