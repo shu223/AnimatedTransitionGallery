@@ -28,6 +28,15 @@
 		8A11EC3D18CCFCC000B77081 /* HUTransitionVerticalLinesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A11EC3918CCFCC000B77081 /* HUTransitionVerticalLinesAnimator.m */; };
 		8A11EC5518CCFCDD00B77081 /* UIViewController+Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A11EC4618CCFCDD00B77081 /* UIViewController+Animator.m */; };
 		8A11EC5918CCFCDD00B77081 /* ZBFallenBricksAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A11EC4E18CCFCDD00B77081 /* ZBFallenBricksAnimator.m */; };
+		8A15461618FE495B00BD36DF /* DMAlphaTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15460F18FE495B00BD36DF /* DMAlphaTransition.m */; };
+		8A15461718FE495B00BD36DF /* DMBaseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15461118FE495B00BD36DF /* DMBaseTransition.m */; };
+		8A15461818FE495B00BD36DF /* DMScaleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15461318FE495B00BD36DF /* DMScaleTransition.m */; };
+		8A15461918FE495B00BD36DF /* DMSlideTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15461518FE495B00BD36DF /* DMSlideTransition.m */; };
+		8A15463018FE4C9800BD36DF /* HFAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15462218FE4C9800BD36DF /* HFAnimator.m */; };
+		8A15463218FE4C9800BD36DF /* HFDynamicAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15462618FE4C9800BD36DF /* HFDynamicAnimator.m */; };
+		8A15466018FE4F0100BD36DF /* BouncePresentTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15464818FE4F0100BD36DF /* BouncePresentTransition.m */; };
+		8A15466618FE4F0100BD36DF /* FlipTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15465418FE4F0100BD36DF /* FlipTransition.m */; };
+		8A15466918FE4F0100BD36DF /* ShrinkDismissTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15465818FE4F0100BD36DF /* ShrinkDismissTransition.m */; };
 		8A6E7F1F18FD2B5A00AFC158 /* ATCAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F1418FD2B5A00AFC158 /* ATCAnimatedTransitioning.m */; };
 		8A6E7F2018FD2B5A00AFC158 /* ATCAnimatedTransitioningBounce.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F1618FD2B5A00AFC158 /* ATCAnimatedTransitioningBounce.m */; };
 		8A6E7F2118FD2B5A00AFC158 /* ATCAnimatedTransitioningFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F1818FD2B5A00AFC158 /* ATCAnimatedTransitioningFade.m */; };
@@ -118,6 +127,24 @@
 		8A11EC4618CCFCDD00B77081 /* UIViewController+Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Animator.m"; sourceTree = "<group>"; };
 		8A11EC4D18CCFCDD00B77081 /* ZBFallenBricksAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBFallenBricksAnimator.h; sourceTree = "<group>"; };
 		8A11EC4E18CCFCDD00B77081 /* ZBFallenBricksAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBFallenBricksAnimator.m; sourceTree = "<group>"; };
+		8A15460E18FE495B00BD36DF /* DMAlphaTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMAlphaTransition.h; sourceTree = "<group>"; };
+		8A15460F18FE495B00BD36DF /* DMAlphaTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMAlphaTransition.m; sourceTree = "<group>"; };
+		8A15461018FE495B00BD36DF /* DMBaseTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMBaseTransition.h; sourceTree = "<group>"; };
+		8A15461118FE495B00BD36DF /* DMBaseTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMBaseTransition.m; sourceTree = "<group>"; };
+		8A15461218FE495B00BD36DF /* DMScaleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMScaleTransition.h; sourceTree = "<group>"; };
+		8A15461318FE495B00BD36DF /* DMScaleTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMScaleTransition.m; sourceTree = "<group>"; };
+		8A15461418FE495B00BD36DF /* DMSlideTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMSlideTransition.h; sourceTree = "<group>"; };
+		8A15461518FE495B00BD36DF /* DMSlideTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMSlideTransition.m; sourceTree = "<group>"; };
+		8A15462118FE4C9800BD36DF /* HFAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFAnimator.h; sourceTree = "<group>"; };
+		8A15462218FE4C9800BD36DF /* HFAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFAnimator.m; sourceTree = "<group>"; };
+		8A15462518FE4C9800BD36DF /* HFDynamicAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFDynamicAnimator.h; sourceTree = "<group>"; };
+		8A15462618FE4C9800BD36DF /* HFDynamicAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFDynamicAnimator.m; sourceTree = "<group>"; };
+		8A15464718FE4F0100BD36DF /* BouncePresentTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncePresentTransition.h; sourceTree = "<group>"; };
+		8A15464818FE4F0100BD36DF /* BouncePresentTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncePresentTransition.m; sourceTree = "<group>"; };
+		8A15465318FE4F0100BD36DF /* FlipTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipTransition.h; sourceTree = "<group>"; };
+		8A15465418FE4F0100BD36DF /* FlipTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipTransition.m; sourceTree = "<group>"; };
+		8A15465718FE4F0100BD36DF /* ShrinkDismissTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShrinkDismissTransition.h; sourceTree = "<group>"; };
+		8A15465818FE4F0100BD36DF /* ShrinkDismissTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShrinkDismissTransition.m; sourceTree = "<group>"; };
 		8A6E7F1318FD2B5A00AFC158 /* ATCAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATCAnimatedTransitioning.h; sourceTree = "<group>"; };
 		8A6E7F1418FD2B5A00AFC158 /* ATCAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATCAnimatedTransitioning.m; sourceTree = "<group>"; };
 		8A6E7F1518FD2B5A00AFC158 /* ATCAnimatedTransitioningBounce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATCAnimatedTransitioningBounce.h; sourceTree = "<group>"; };
@@ -313,6 +340,9 @@
 		8A11EC3018CCFCA100B77081 /* AnimatedTransitionings */ = {
 			isa = PBXGroup;
 			children = (
+				8A15464018FE4F0100BD36DF /* huldun/Transitions */,
+				8A15461A18FE4C9800BD36DF /* CustomTransitions */,
+				8A15460D18FE495B00BD36DF /* DMCustomTransitions */,
 				8A6E7FED18FE272E00AFC158 /* KWTransition */,
 				8A6E7F9418FD581200AFC158 /* ADTransitionController */,
 				8A6E7F2918FD394000AFC158 /* VCTransitionsLibrary */,
@@ -350,6 +380,48 @@
 			);
 			name = ZBCustomTransitions;
 			path = ../submodules/ZBCustomTransitions/ZBCustomTransitions;
+			sourceTree = "<group>";
+		};
+		8A15460D18FE495B00BD36DF /* DMCustomTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				8A15460E18FE495B00BD36DF /* DMAlphaTransition.h */,
+				8A15460F18FE495B00BD36DF /* DMAlphaTransition.m */,
+				8A15461018FE495B00BD36DF /* DMBaseTransition.h */,
+				8A15461118FE495B00BD36DF /* DMBaseTransition.m */,
+				8A15461218FE495B00BD36DF /* DMScaleTransition.h */,
+				8A15461318FE495B00BD36DF /* DMScaleTransition.m */,
+				8A15461418FE495B00BD36DF /* DMSlideTransition.h */,
+				8A15461518FE495B00BD36DF /* DMSlideTransition.m */,
+			);
+			name = DMCustomTransitions;
+			path = ../submodules/DMCustomTransitions/Transitions;
+			sourceTree = "<group>";
+		};
+		8A15461A18FE4C9800BD36DF /* CustomTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				8A15462118FE4C9800BD36DF /* HFAnimator.h */,
+				8A15462218FE4C9800BD36DF /* HFAnimator.m */,
+				8A15462518FE4C9800BD36DF /* HFDynamicAnimator.h */,
+				8A15462618FE4C9800BD36DF /* HFDynamicAnimator.m */,
+			);
+			name = CustomTransitions;
+			path = ../submodules/CustomTransitions/CustomAnimations;
+			sourceTree = "<group>";
+		};
+		8A15464018FE4F0100BD36DF /* huldun/Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				8A15464718FE4F0100BD36DF /* BouncePresentTransition.h */,
+				8A15464818FE4F0100BD36DF /* BouncePresentTransition.m */,
+				8A15465318FE4F0100BD36DF /* FlipTransition.h */,
+				8A15465418FE4F0100BD36DF /* FlipTransition.m */,
+				8A15465718FE4F0100BD36DF /* ShrinkDismissTransition.h */,
+				8A15465818FE4F0100BD36DF /* ShrinkDismissTransition.m */,
+			);
+			name = huldun/Transitions;
+			path = ../submodules/haldun_Transitions/Transitions;
 			sourceTree = "<group>";
 		};
 		8A6E7F1218FD2B5A00AFC158 /* ATCAnimatedTransitions */ = {
@@ -579,6 +651,7 @@
 				8A6E7F4518FD394000AFC158 /* CEPortalAnimationController.m in Sources */,
 				8A11EC3C18CCFCC000B77081 /* HUTransitionHorizontalLinesAnimator.m in Sources */,
 				8A6E7FCE18FD581200AFC158 /* ADFoldTransition.m in Sources */,
+				8A15466618FE4F0100BD36DF /* FlipTransition.m in Sources */,
 				8A6E7F2418FD2B5A00AFC158 /* ATCTransitioningDelegate.m in Sources */,
 				8A6E7FC718FD581200AFC158 /* ADBackFadeTransition.m in Sources */,
 				8A6E7FDD18FD581200AFC158 /* ADTransitioningViewController.m in Sources */,
@@ -586,6 +659,7 @@
 				8A6E7F4718FD394000AFC158 /* CETurnAnimationController.m in Sources */,
 				8A6E7FC918FD581200AFC158 /* ADCrossTransition.m in Sources */,
 				8A11EC3A18CCFCC000B77081 /* HUTransitionAnimator.m in Sources */,
+				8A15463018FE4C9800BD36DF /* HFAnimator.m in Sources */,
 				8A6E7F2218FD2B5A00AFC158 /* ATCAnimatedTransitioningFloat.m in Sources */,
 				8A11EC5518CCFCDD00B77081 /* UIViewController+Animator.m in Sources */,
 				8A6E801918FE272E00AFC158 /* KWTransition.m in Sources */,
@@ -595,6 +669,7 @@
 				8A6E7FC818FD581200AFC158 /* ADCarrouselTransition.m in Sources */,
 				8A6E7FD418FD581200AFC158 /* ADScaleTransition.m in Sources */,
 				8A6E7FD718FD581200AFC158 /* ADSwipeFadeTransition.m in Sources */,
+				8A15466918FE4F0100BD36DF /* ShrinkDismissTransition.m in Sources */,
 				8A6E7FD618FD581200AFC158 /* ADSwapTransition.m in Sources */,
 				8A6E7FDB18FD581200AFC158 /* ADTransitionController.m in Sources */,
 				8A6E7F2318FD2B5A00AFC158 /* ATCAnimatedTransitioningSquish.m in Sources */,
@@ -609,27 +684,33 @@
 				8A11EC3D18CCFCC000B77081 /* HUTransitionVerticalLinesAnimator.m in Sources */,
 				8A6E7F2018FD2B5A00AFC158 /* ATCAnimatedTransitioningBounce.m in Sources */,
 				8A6E7F4218FD394000AFC158 /* CEFlipAnimationController.m in Sources */,
+				8A15461618FE495B00BD36DF /* DMAlphaTransition.m in Sources */,
 				8A6E7F4018FD394000AFC158 /* CECubeAnimationController.m in Sources */,
 				8A6E7F4118FD394000AFC158 /* CEExplodeAnimationController.m in Sources */,
 				8A11EC0218CCFBDC00B77081 /* main.m in Sources */,
 				8A6E7FDC18FD581200AFC158 /* ADTransitioningDelegate.m in Sources */,
 				8A6E7F4618FD394000AFC158 /* CEReversibleAnimationController.m in Sources */,
 				8A6E7F4418FD394000AFC158 /* CENatGeoAnimationController.m in Sources */,
+				8A15463218FE4C9800BD36DF /* HFDynamicAnimator.m in Sources */,
 				8A11EC0C18CCFBDC00B77081 /* TTMMasterViewController.m in Sources */,
 				8A6E7FCF18FD581200AFC158 /* ADGhostTransition.m in Sources */,
 				8A6E7F3E18FD394000AFC158 /* CECardsAnimationController.m in Sources */,
 				8A6E7FCA18FD581200AFC158 /* ADCubeTransition.m in Sources */,
 				8A6E7FD318FD581200AFC158 /* ADPushRotateTransition.m in Sources */,
+				8A15461818FE495B00BD36DF /* DMScaleTransition.m in Sources */,
 				8A6E7FDF18FD581200AFC158 /* UIViewController+ADTransitionController.m in Sources */,
 				8A6E7FD018FD581200AFC158 /* ADGlueTransition.m in Sources */,
+				8A15466018FE4F0100BD36DF /* BouncePresentTransition.m in Sources */,
 				8A6E7FCC18FD581200AFC158 /* ADFadeTransition.m in Sources */,
 				8A6E7FDE18FD581200AFC158 /* ADZoomTransition.m in Sources */,
 				8A6E7F1F18FD2B5A00AFC158 /* ATCAnimatedTransitioning.m in Sources */,
 				8A11EC0F18CCFBDC00B77081 /* TTMDetailViewController.m in Sources */,
 				8A6E7FCB18FD581200AFC158 /* ADDualTransition.m in Sources */,
+				8A15461718FE495B00BD36DF /* DMBaseTransition.m in Sources */,
 				8A6E7FD218FD581200AFC158 /* ADNavigationControllerDelegate.m in Sources */,
 				8A6E803B18FE290E00AFC158 /* KWTransitionHelper.m in Sources */,
 				8A11EC3B18CCFCC000B77081 /* HUTransitionGhostAnimator.m in Sources */,
+				8A15461918FE495B00BD36DF /* DMSlideTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

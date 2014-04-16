@@ -14,6 +14,10 @@
 #import "CEReversibleAnimationController.h"
 #import "ADTransitionController.h"
 #import "KWTransitionHelper.h"
+#import "DMBaseTransition.h"
+#import "HFAnimator.h"
+#import "HFDynamicAnimator.h"
+#import "FlipTransition.h"
 
 
 @interface TTMMasterViewController ()
@@ -99,6 +103,14 @@
                    KWTransitionStyleNamePushUp,
                    KWTransitionStyleNameFall,
                    KWTransitionStyleNameSink,
+                   @"DMAlphaTransition",
+                   @"DMScaleTransition",
+                   @"DMSlideTransition",
+                   @"HFAnimator",
+                   @"HFDynamicAnimator",
+                   @"BouncePresentTransition",
+                   @"FlipTransition",
+                   @"ShrinkDismissTransition",
                    ];
 }
 
@@ -169,8 +181,7 @@
     
     if (self.animator) {
 
-        [self setupAnimator:self.animator
-               forOperation:operation];
+        [self setupAnimatorForOperation:operation];
     }
     
     return self.animator;
@@ -181,46 +192,46 @@
 #pragma mark - Private
 
 // setup for each OSS
-- (void)setupAnimator:(id)animator
-         forOperation:(UINavigationControllerOperation)operation
+- (void)setupAnimatorForOperation:(UINavigationControllerOperation)operation
 {
     // HUAnimator
-    if ([animator isKindOfClass:[HUTransitionAnimator class]]) {
-        
-        if (operation == UINavigationControllerOperationPush) {
-            
-            [(HUTransitionAnimator *)animator setPresenting:YES];
-        }
-        else {
-            [(HUTransitionAnimator *)animator setPresenting:NO];
-        }
+    // DMCustomTransitions
+    if (
+        [self.animator isKindOfClass:[HUTransitionAnimator class]] ||
+        [self.animator isKindOfClass:[DMBaseTransition class]] ||
+        [self.animator isKindOfClass:[HFAnimator class]] ||
+        [self.animator isKindOfClass:[HFDynamicAnimator class]]
+        )
+    {
+        [self.animator setPresenting:(operation == UINavigationControllerOperationPush)];
     }
     // Animated-Transition-Collection
-    else if ([animator isKindOfClass:[ATCAnimatedTransitioning class]]) {
+    else if ([self.animator isKindOfClass:[ATCAnimatedTransitioning class]]) {
         
-        [(ATCAnimatedTransitioning *)animator setIsPush:YES];
-        [(ATCAnimatedTransitioning *)animator setDuration:1.0];
+        [self.animator setIsPush:YES];
+        [self.animator setDuration:1.0];
+        [self.animator setDismissal:(operation == UINavigationControllerOperationPop)];
         
         if (operation == UINavigationControllerOperationPush) {
             
-            [animator setDismissal:NO];
-            [(ATCAnimatedTransitioning *)animator setDirection:ATCTransitionAnimationDirectionRight];
+            [(ATCAnimatedTransitioning *)self.animator setDirection:ATCTransitionAnimationDirectionRight];
         }
         else {
-            [animator setDismissal:YES];
-            [(ATCAnimatedTransitioning *)animator setDirection:ATCTransitionAnimationDirectionLeft];
+            [(ATCAnimatedTransitioning *)self.animator setDirection:ATCTransitionAnimationDirectionLeft];
         }
     }
     // LCZoomTransition
-    else if ([animator isKindOfClass:[LCZoomTransition class]]) {
+    else if ([self.animator isKindOfClass:[LCZoomTransition class]]) {
         
-        [(LCZoomTransition *)animator setTransitionDuration:0.5];
-        [(LCZoomTransition *)animator setOperation:operation];
+        [(LCZoomTransition *)self.animator setTransitionDuration:0.5];
+        [(LCZoomTransition *)self.animator setOperation:operation];
     }
     // VCTransitionsLibrary
-    else if ([animator isKindOfClass:[CEReversibleAnimationController class]]) {
+    // FlipTransition
+    else if ([self.animator isKindOfClass:[CEReversibleAnimationController class]] ||
+             [self.animator isKindOfClass:[FlipTransition class]]) {
         
-        [(CEReversibleAnimationController *)animator setReverse:(operation == UINavigationControllerOperationPop)];
+        [self.animator setReverse:(operation == UINavigationControllerOperationPop)];
     }
     // ADTransition
     else if ([self.animator isKindOfClass:[ADTransition class]]) {
@@ -252,10 +263,10 @@
         
         if (operation == UINavigationControllerOperationPush) {
             
-            [(KWTransition *)animator setAction:KWTransitionStepPresent];
+            [(KWTransition *)self.animator setAction:KWTransitionStepPresent];
         }
         else {
-            [(KWTransition *)animator setAction:KWTransitionStepDismiss];
+            [(KWTransition *)self.animator setAction:KWTransitionStepDismiss];
         }
         
         if ([(KWTransition *)self.animator style] == KWTransitionStyleSink) {

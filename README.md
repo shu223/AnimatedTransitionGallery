@@ -61,3 +61,15 @@ $ git submodule update --init --recursive
 - KWTransitionStyleNamePushUp
 - KWTransitionStyleNameFall
 - KWTransitionStyleNameSink
+- DMAlphaTransition
+- DMScaleTransition
+- DMSlideTransition
+- HFAnimator
+- HFDynamicAnimator
+- BouncePresentTransition
+- FlipTransition
+- ShrinkDismissTransition
+
+##Related Article
+
+- [http://d.hatena.ne.jp/shu223/20140416/1397608824](http://d.hatena.ne.jp/shu223/20140416/1397608824)  (Japanese)
