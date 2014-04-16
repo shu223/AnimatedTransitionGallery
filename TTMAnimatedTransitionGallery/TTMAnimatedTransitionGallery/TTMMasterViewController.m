@@ -184,6 +184,7 @@
 - (void)setupAnimator:(id)animator
          forOperation:(UINavigationControllerOperation)operation
 {
+    // HUAnimator
     if ([animator isKindOfClass:[HUTransitionAnimator class]]) {
         
         if (operation == UINavigationControllerOperationPush) {
@@ -194,6 +195,7 @@
             [(HUTransitionAnimator *)animator setPresenting:NO];
         }
     }
+    // Animated-Transition-Collection
     else if ([animator isKindOfClass:[ATCAnimatedTransitioning class]]) {
         
         [(ATCAnimatedTransitioning *)animator setIsPush:YES];
@@ -209,15 +211,18 @@
             [(ATCAnimatedTransitioning *)animator setDirection:ATCTransitionAnimationDirectionLeft];
         }
     }
+    // LCZoomTransition
     else if ([animator isKindOfClass:[LCZoomTransition class]]) {
         
         [(LCZoomTransition *)animator setTransitionDuration:0.5];
         [(LCZoomTransition *)animator setOperation:operation];
     }
+    // VCTransitionsLibrary
     else if ([animator isKindOfClass:[CEReversibleAnimationController class]]) {
         
         [(CEReversibleAnimationController *)animator setReverse:(operation == UINavigationControllerOperationPop)];
     }
+    // ADTransition
     else if ([self.animator isKindOfClass:[ADTransition class]]) {
         
         ADTransition *transition = self.animator;

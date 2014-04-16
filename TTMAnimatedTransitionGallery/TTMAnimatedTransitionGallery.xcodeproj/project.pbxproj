@@ -315,7 +315,7 @@
 			children = (
 				8A6E7FED18FE272E00AFC158 /* KWTransition */,
 				8A6E7F9418FD581200AFC158 /* ADTransitionController */,
-				8A6E7F2918FD394000AFC158 /* AnimationControllers */,
+				8A6E7F2918FD394000AFC158 /* VCTransitionsLibrary */,
 				8A6E7F2518FD374700AFC158 /* LCZoomTransition */,
 				8A6E7F1218FD2B5A00AFC158 /* ATCAnimatedTransitions */,
 				8A11EC3E18CCFCDD00B77081 /* ZBCustomTransitions */,
@@ -382,7 +382,7 @@
 			path = ../submodules/LCZoomTransition/LCZoomTransition;
 			sourceTree = "<group>";
 		};
-		8A6E7F2918FD394000AFC158 /* AnimationControllers */ = {
+		8A6E7F2918FD394000AFC158 /* VCTransitionsLibrary */ = {
 			isa = PBXGroup;
 			children = (
 				8A6E7F2A18FD394000AFC158 /* CECardsAnimationController.h */,
@@ -406,7 +406,7 @@
 				8A6E7F3C18FD394000AFC158 /* CETurnAnimationController.h */,
 				8A6E7F3D18FD394000AFC158 /* CETurnAnimationController.m */,
 			);
-			name = AnimationControllers;
+			name = VCTransitionsLibrary;
 			path = ../submodules/VCTransitionsLibrary/AnimationControllers;
 			sourceTree = "<group>";
 		};
