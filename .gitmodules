@@ -18,13 +18,13 @@
 	url = https://github.com/zonble/ZBCustomTransitions
 [submodule "submodules/KWTransition"]
 	path = submodules/KWTransition
-	url = git@github.com:KurtWagner/KWTransition.git
+url=https://github.com/KurtWagner/KWTransition.git
 [submodule "submodules/DMCustomTransitions"]
 	path = submodules/DMCustomTransitions
-	url = git@github.com:Dimillian/DMCustomTransitions.git
+url=https://github.com/Dimillian/DMCustomTransitions.git
 [submodule "submodules/CustomTransitions"]
 	path = submodules/CustomTransitions
-	url = git@github.com:gregoryklein/CustomTransitions.git
+url=https://github.com/gregoryklein/CustomTransitions.git
 [submodule "submodules/haldun_Transitions"]
 	path = submodules/haldun_Transitions
-	url = git@github.com:haldun/Transitions.git
+url=https://github.com/haldun/Transitions.git
