@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rS3-R9-Ivy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rS3-R9-Ivy">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -19,7 +21,7 @@
             </objects>
             <point key="canvasLocation" x="-1" y="64"/>
         </scene>
-        <!--Master View Controller - Master-->
+        <!--Master-->
         <scene sceneID="VgW-fR-Quf">
             <objects>
                 <tableViewController title="Master" id="pGg-6v-bdr" customClass="TTMMasterViewController" sceneMemberID="viewController">
@@ -66,7 +68,7 @@
             </objects>
             <point key="canvasLocation" x="459" y="64"/>
         </scene>
-        <!--Detail View Controller - Detail-->
+        <!--Detail-->
         <scene sceneID="Cn3-H9-jdl">
             <objects>
                 <viewController title="Detail" id="Ah7-4n-0Wa" customClass="TTMDetailViewController" sceneMemberID="viewController">
@@ -78,15 +80,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Detail view content goes here" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lei-5M-9Gs">
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Detail view content goes here" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lei-5M-9Gs">
                                 <rect key="frame" x="20" y="277" width="280" height="14"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="OBI-sJ-Y8m"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Lei-5M-9Gs" secondAttribute="centerY" id="1xl-AM-en0"/>
+                            <constraint firstItem="Lei-5M-9Gs" firstAttribute="leading" secondItem="MMQ-IT-qOo" secondAttribute="leadingMargin" constant="4" id="AIV-Iy-Ng1"/>
+                            <constraint firstAttribute="centerX" secondItem="Lei-5M-9Gs" secondAttribute="centerX" id="hcp-I9-3Lt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lei-5M-9Gs" secondAttribute="trailing" constant="4" id="wMw-HK-eSC"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="cra-N8-TIN"/>
                     <connections>

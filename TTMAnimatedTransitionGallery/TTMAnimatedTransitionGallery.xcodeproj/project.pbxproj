@@ -37,6 +37,7 @@
 		8A15466018FE4F0100BD36DF /* BouncePresentTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15464818FE4F0100BD36DF /* BouncePresentTransition.m */; };
 		8A15466618FE4F0100BD36DF /* FlipTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15465418FE4F0100BD36DF /* FlipTransition.m */; };
 		8A15466918FE4F0100BD36DF /* ShrinkDismissTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15465818FE4F0100BD36DF /* ShrinkDismissTransition.m */; };
+		8A15FFF819F332CF00914B6E /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A15FFF719F332CF00914B6E /* Launch Screen.xib */; };
 		8A6E7F1F18FD2B5A00AFC158 /* ATCAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F1418FD2B5A00AFC158 /* ATCAnimatedTransitioning.m */; };
 		8A6E7F2018FD2B5A00AFC158 /* ATCAnimatedTransitioningBounce.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F1618FD2B5A00AFC158 /* ATCAnimatedTransitioningBounce.m */; };
 		8A6E7F2118FD2B5A00AFC158 /* ATCAnimatedTransitioningFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F1818FD2B5A00AFC158 /* ATCAnimatedTransitioningFade.m */; };
@@ -145,6 +146,7 @@
 		8A15465418FE4F0100BD36DF /* FlipTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipTransition.m; sourceTree = "<group>"; };
 		8A15465718FE4F0100BD36DF /* ShrinkDismissTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShrinkDismissTransition.h; sourceTree = "<group>"; };
 		8A15465818FE4F0100BD36DF /* ShrinkDismissTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShrinkDismissTransition.m; sourceTree = "<group>"; };
+		8A15FFF719F332CF00914B6E /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		8A6E7F1318FD2B5A00AFC158 /* ATCAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATCAnimatedTransitioning.h; sourceTree = "<group>"; };
 		8A6E7F1418FD2B5A00AFC158 /* ATCAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATCAnimatedTransitioning.m; sourceTree = "<group>"; };
 		8A6E7F1518FD2B5A00AFC158 /* ATCAnimatedTransitioningBounce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATCAnimatedTransitioningBounce.h; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 			children = (
 				8A11EC3018CCFCA100B77081 /* AnimatedTransitionings */,
 				8A11EBFB18CCFBDC00B77081 /* TTMAnimatedTransitionGallery */,
+				8A11EBFC18CCFBDC00B77081 /* Supporting Files */,
 				8A11EC1D18CCFBDC00B77081 /* TTMAnimatedTransitionGalleryTests */,
 				8A11EBF418CCFBDB00B77081 /* Frameworks */,
 				8A11EBF318CCFBDB00B77081 /* Products */,
@@ -303,7 +306,6 @@
 				8A6E803918FE290E00AFC158 /* KWTransitionHelper.h */,
 				8A6E803A18FE290E00AFC158 /* KWTransitionHelper.m */,
 				8A11EC1018CCFBDC00B77081 /* Images.xcassets */,
-				8A11EBFC18CCFBDC00B77081 /* Supporting Files */,
 			);
 			path = TTMAnimatedTransitionGallery;
 			sourceTree = "<group>";
@@ -315,8 +317,10 @@
 				8A11EBFE18CCFBDC00B77081 /* InfoPlist.strings */,
 				8A11EC0118CCFBDC00B77081 /* main.m */,
 				8A11EC0318CCFBDC00B77081 /* TTMAnimatedTransitionGallery-Prefix.pch */,
+				8A15FFF719F332CF00914B6E /* Launch Screen.xib */,
 			);
 			name = "Supporting Files";
+			path = TTMAnimatedTransitionGallery;
 			sourceTree = "<group>";
 		};
 		8A11EC1D18CCFBDC00B77081 /* TTMAnimatedTransitionGalleryTests */ = {
@@ -628,6 +632,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A11EC1118CCFBDC00B77081 /* Images.xcassets in Resources */,
+				8A15FFF819F332CF00914B6E /* Launch Screen.xib in Resources */,
 				8A11EC0018CCFBDC00B77081 /* InfoPlist.strings in Resources */,
 				8A11EC0918CCFBDC00B77081 /* Main.storyboard in Resources */,
 			);
