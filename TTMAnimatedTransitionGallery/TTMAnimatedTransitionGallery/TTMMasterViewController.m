@@ -18,6 +18,10 @@
 #import "HFAnimator.h"
 #import "HFDynamicAnimator.h"
 #import "FlipTransition.h"
+#import "CoreImageTransition.h"
+
+
+#define kClassNameForCoreImageTransition @"CoreImageTransition"
 
 
 @interface TTMMasterViewController ()
@@ -62,6 +66,15 @@
                    @"HUTransitionHorizontalLinesAnimator",
                    @"HUTransitionGhostAnimator",
                    @"ZBFallenBricksAnimator",
+                   [NSString stringWithFormat:@"%@%@", kClassNameForCoreImageTransition, kCoreImageTransitionTypeNameCopyMachine],
+                   [NSString stringWithFormat:@"%@%@", kClassNameForCoreImageTransition, kCoreImageTransitionTypeNameDisintegrateWithMask],
+                   [NSString stringWithFormat:@"%@%@", kClassNameForCoreImageTransition, kCoreImageTransitionTypeNameDissolve],
+                   [NSString stringWithFormat:@"%@%@", kClassNameForCoreImageTransition, kCoreImageTransitionTypeNameFlash],
+                   [NSString stringWithFormat:@"%@%@", kClassNameForCoreImageTransition, kCoreImageTransitionTypeNameMod],
+                   [NSString stringWithFormat:@"%@%@", kClassNameForCoreImageTransition, kCoreImageTransitionTypeNamePageCurl],
+                   [NSString stringWithFormat:@"%@%@", kClassNameForCoreImageTransition, kCoreImageTransitionTypeNamePageCurlWithShadow],
+                   [NSString stringWithFormat:@"%@%@", kClassNameForCoreImageTransition, kCoreImageTransitionTypeNameRipple],
+                   [NSString stringWithFormat:@"%@%@", kClassNameForCoreImageTransition, kCoreImageTransitionTypeNameSwipe],
                    @"ATCAnimatedTransitioningFade",
                    @"ATCAnimatedTransitioningBounce",
                    @"ATCAnimatedTransitioningSquish",
@@ -178,6 +191,16 @@
 
         self.animator = transition;
     }
+    // only for CoreImageTransition
+    else if ([self.transitionClassName hasPrefix:kClassNameForCoreImageTransition]) {
+        
+        CoreImageTransition *transition = [[CoreImageTransition alloc] init];
+        NSString *typeName = [self.transitionClassName stringByReplacingOccurrencesOfString:kClassNameForCoreImageTransition
+                                                                                 withString:@""];
+        [transition setTransitionTypeWithName:typeName];
+        
+        self.animator = transition;
+    }
     
     if (self.animator) {
 
@@ -197,6 +220,7 @@
     // HUAnimator
     // DMCustomTransitions
     if (
+        [self.animator isKindOfClass:[CoreImageTransition class]] ||
         [self.animator isKindOfClass:[HUTransitionAnimator class]] ||
         [self.animator isKindOfClass:[DMBaseTransition class]] ||
         [self.animator isKindOfClass:[HFAnimator class]] ||

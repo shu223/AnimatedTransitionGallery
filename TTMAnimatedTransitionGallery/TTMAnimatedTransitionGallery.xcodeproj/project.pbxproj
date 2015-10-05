@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A0826E41BC285E90058CDD8 /* CoreImageTransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0826E21BC285E90058CDD8 /* CoreImageTransitionView.m */; settings = {ASSET_TAGS = (); }; };
+		8A0826E71BC286A20058CDD8 /* CoreImageTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0826E61BC286A20058CDD8 /* CoreImageTransition.m */; settings = {ASSET_TAGS = (); }; };
 		8A11EBF618CCFBDB00B77081 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11EBF518CCFBDB00B77081 /* Foundation.framework */; };
 		8A11EBF818CCFBDB00B77081 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11EBF718CCFBDB00B77081 /* CoreGraphics.framework */; };
 		8A11EBFA18CCFBDB00B77081 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11EBF918CCFBDB00B77081 /* UIKit.framework */; };
@@ -77,9 +79,16 @@
 		8A6E7FDF18FD581200AFC158 /* UIViewController+ADTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7FC618FD581200AFC158 /* UIViewController+ADTransitionController.m */; };
 		8A6E801918FE272E00AFC158 /* KWTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7FF018FE272E00AFC158 /* KWTransition.m */; };
 		8A6E803B18FE290E00AFC158 /* KWTransitionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E803A18FE290E00AFC158 /* KWTransitionHelper.m */; };
+		8A88C38E1BC30DBC00A7F6E1 /* CoreImageTransitionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A88C38D1BC30DBC00A7F6E1 /* CoreImageTransitionHelper.m */; settings = {ASSET_TAGS = (); }; };
+		8A88C3921BC30DE800A7F6E1 /* mask.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A88C3901BC30DE800A7F6E1 /* mask.jpg */; settings = {ASSET_TAGS = (); }; };
+		8A88C3931BC30DE800A7F6E1 /* restrictedshine.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 8A88C3911BC30DE800A7F6E1 /* restrictedshine.tiff */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A0826E11BC285E90058CDD8 /* CoreImageTransitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreImageTransitionView.h; sourceTree = "<group>"; };
+		8A0826E21BC285E90058CDD8 /* CoreImageTransitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreImageTransitionView.m; sourceTree = "<group>"; };
+		8A0826E51BC286A20058CDD8 /* CoreImageTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreImageTransition.h; sourceTree = "<group>"; };
+		8A0826E61BC286A20058CDD8 /* CoreImageTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreImageTransition.m; sourceTree = "<group>"; };
 		8A11EBF218CCFBDB00B77081 /* TTMAnimatedTransitionGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTMAnimatedTransitionGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A11EBF518CCFBDB00B77081 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8A11EBF718CCFBDB00B77081 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -216,6 +225,11 @@
 		8A6E7FF018FE272E00AFC158 /* KWTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWTransition.m; sourceTree = "<group>"; };
 		8A6E803918FE290E00AFC158 /* KWTransitionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWTransitionHelper.h; sourceTree = "<group>"; };
 		8A6E803A18FE290E00AFC158 /* KWTransitionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWTransitionHelper.m; sourceTree = "<group>"; };
+		8A88C38B1BC30D4100A7F6E1 /* CoreImageTransitionTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreImageTransitionTypes.h; sourceTree = "<group>"; };
+		8A88C38C1BC30DBC00A7F6E1 /* CoreImageTransitionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreImageTransitionHelper.h; sourceTree = "<group>"; };
+		8A88C38D1BC30DBC00A7F6E1 /* CoreImageTransitionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreImageTransitionHelper.m; sourceTree = "<group>"; };
+		8A88C3901BC30DE800A7F6E1 /* mask.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mask.jpg; sourceTree = "<group>"; };
+		8A88C3911BC30DE800A7F6E1 /* restrictedshine.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = restrictedshine.tiff; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,9 +246,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A0826DD1BC285E90058CDD8 /* CoreImageTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				8A88C3941BC313F200A7F6E1 /* Private */,
+				8A0826E51BC286A20058CDD8 /* CoreImageTransition.h */,
+				8A0826E61BC286A20058CDD8 /* CoreImageTransition.m */,
+			);
+			name = CoreImageTransitions;
+			path = ../CoreImageTransitions;
+			sourceTree = "<group>";
+		};
 		8A11EBE918CCFBDB00B77081 = {
 			isa = PBXGroup;
 			children = (
+				8A0826DD1BC285E90058CDD8 /* CoreImageTransitions */,
 				8A11EC3018CCFCA100B77081 /* AnimatedTransitionings */,
 				8A11EBFB18CCFBDC00B77081 /* TTMAnimatedTransitionGallery */,
 				8A11EBFC18CCFBDC00B77081 /* Supporting Files */,
@@ -505,6 +531,28 @@
 			path = ../submodules/KWTransition;
 			sourceTree = "<group>";
 		};
+		8A88C38F1BC30DE800A7F6E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A88C3901BC30DE800A7F6E1 /* mask.jpg */,
+				8A88C3911BC30DE800A7F6E1 /* restrictedshine.tiff */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8A88C3941BC313F200A7F6E1 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				8A88C38F1BC30DE800A7F6E1 /* Resources */,
+				8A88C38B1BC30D4100A7F6E1 /* CoreImageTransitionTypes.h */,
+				8A88C38C1BC30DBC00A7F6E1 /* CoreImageTransitionHelper.h */,
+				8A88C38D1BC30DBC00A7F6E1 /* CoreImageTransitionHelper.m */,
+				8A0826E11BC285E90058CDD8 /* CoreImageTransitionView.h */,
+				8A0826E21BC285E90058CDD8 /* CoreImageTransitionView.m */,
+			);
+			name = Private;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -559,6 +607,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A11EC1118CCFBDC00B77081 /* Images.xcassets in Resources */,
+				8A88C3931BC30DE800A7F6E1 /* restrictedshine.tiff in Resources */,
+				8A88C3921BC30DE800A7F6E1 /* mask.jpg in Resources */,
 				8A15FFF819F332CF00914B6E /* Launch Screen.xib in Resources */,
 				8A11EC0018CCFBDC00B77081 /* InfoPlist.strings in Resources */,
 				8A11EC0918CCFBDC00B77081 /* Main.storyboard in Resources */,
@@ -584,6 +634,7 @@
 				8A6E7FC918FD581200AFC158 /* ADCrossTransition.m in Sources */,
 				8A11EC3A18CCFCC000B77081 /* HUTransitionAnimator.m in Sources */,
 				8A15463018FE4C9800BD36DF /* HFAnimator.m in Sources */,
+				8A0826E71BC286A20058CDD8 /* CoreImageTransition.m in Sources */,
 				8A6E7F2218FD2B5A00AFC158 /* ATCAnimatedTransitioningFloat.m in Sources */,
 				8A11EC5518CCFCDD00B77081 /* UIViewController+Animator.m in Sources */,
 				8A6E801918FE272E00AFC158 /* KWTransition.m in Sources */,
@@ -607,6 +658,7 @@
 				8A11EC0618CCFBDC00B77081 /* TTMAppDelegate.m in Sources */,
 				8A11EC3D18CCFCC000B77081 /* HUTransitionVerticalLinesAnimator.m in Sources */,
 				8A6E7F2018FD2B5A00AFC158 /* ATCAnimatedTransitioningBounce.m in Sources */,
+				8A88C38E1BC30DBC00A7F6E1 /* CoreImageTransitionHelper.m in Sources */,
 				8A6E7F4218FD394000AFC158 /* CEFlipAnimationController.m in Sources */,
 				8A15461618FE495B00BD36DF /* DMAlphaTransition.m in Sources */,
 				8A6E7F4018FD394000AFC158 /* CECubeAnimationController.m in Sources */,
@@ -627,6 +679,7 @@
 				8A15466018FE4F0100BD36DF /* BouncePresentTransition.m in Sources */,
 				8A6E7FCC18FD581200AFC158 /* ADFadeTransition.m in Sources */,
 				8A6E7FDE18FD581200AFC158 /* ADZoomTransition.m in Sources */,
+				8A0826E41BC285E90058CDD8 /* CoreImageTransitionView.m in Sources */,
 				8A6E7F1F18FD2B5A00AFC158 /* ATCAnimatedTransitioning.m in Sources */,
 				8A11EC0F18CCFBDC00B77081 /* TTMDetailViewController.m in Sources */,
 				8A6E7FCB18FD581200AFC158 /* ADDualTransition.m in Sources */,
@@ -693,7 +746,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -725,7 +778,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
