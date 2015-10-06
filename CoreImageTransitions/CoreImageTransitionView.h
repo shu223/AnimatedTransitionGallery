@@ -17,6 +17,9 @@
                     fromImage:(UIImage *)fromImage
                       toImage:(UIImage *)toImage;
 
+- (void)start;
+- (void)stop;
+
 - (void)changeTransition:(CoreImageTransitionType)type;
 - (NSString *)currentFilterName;
 

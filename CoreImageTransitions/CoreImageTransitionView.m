@@ -13,7 +13,7 @@
 @interface CoreImageTransitionView ()
 <GLKViewDelegate>
 {
-    NSTimeInterval  base;
+    NSTimeInterval  startTime;
     CGRect imageRect;
 }
 @property (nonatomic, strong) CIImage *inputImage;
@@ -23,6 +23,7 @@
 @property (nonatomic, strong) CIVector *extent;
 @property (nonatomic, strong) CIFilter *transition;
 @property (nonatomic, strong) CIContext *myContext;
+@property (nonatomic, assign) NSTimer *timer;
 @end
 
 
@@ -34,6 +35,8 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+
+        startTime = [NSDate timeIntervalSinceReferenceDate];
 
         // 遷移前後の画像とマスク画像を生成
         UIImage *uiMaskImage = [UIImage imageNamed:@"mask.jpg"];
@@ -53,24 +56,18 @@
         // 遷移アニメーションが起こる領域を示す矩形（CIVector型）
         self.extent = [CIVector vectorWithX:0 Y:0 Z:width W:height];
         
-        // 遷移アニメーション制御の基準となる時刻
-        base = [NSDate timeIntervalSinceReferenceDate];
-        
-        // 遷移アニメーションを制御するタイマー
-        [NSTimer scheduledTimerWithTimeInterval:1.0/30.0
-                                         target:self
-                                       selector:@selector(onTimer:)
-                                       userInfo:nil
-                                        repeats:YES];
-        
         // EAGLDelegateの設定
         self.delegate = self;
         
         // コンテキスト生成
         self.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
-        self.myContext = [CIContext contextWithEAGLContext:self.context];
+        self.myContext = [CIContext contextWithEAGLContext:self.context];        
     }
     return self;
+}
+
+- (void)dealloc {
+    [self stop];
 }
 
 
@@ -85,7 +82,7 @@
     [self.transition setValue:@(time) forKey:kCIInputTimeKey];
     
     // フィルタ処理実行
-    CIImage *transitionImage = [self.transition valueForKey:@"outputImage"];
+    CIImage *transitionImage = [self.transition valueForKey:kCIOutputImageKey];
     
     return transitionImage;
 }
@@ -93,6 +90,25 @@
 
 // =============================================================================
 #pragma mark - Public
+
+- (void)start {
+    
+    startTime = [NSDate timeIntervalSinceReferenceDate];
+    
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0/30.0
+                                                  target:self
+                                                selector:@selector(onTimer:)
+                                                userInfo:nil
+                                                 repeats:YES];
+    [self.timer fire];
+}
+
+- (void)stop {
+    if (self.timer) {
+        [self.timer invalidate];
+        self.timer = nil;
+    }
+}
 
 - (void)changeTransition:(CoreImageTransitionType)type {
     
@@ -145,25 +161,18 @@
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
     
-    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    dispatch_async(queue, ^{
-        
-        float t = [NSDate timeIntervalSinceReferenceDate] - base;
-        CIImage *image = [self imageForTransitionAtTime:t];
-
-        // 描画領域を示す矩形
-        CGFloat scale = [[UIScreen mainScreen] scale];
-        CGRect destRect = CGRectMake(0, self.bounds.size.height * scale - imageRect.size.height,
-                                     imageRect.size.width,
-                                     imageRect.size.height);
-
-        dispatch_async(dispatch_get_main_queue(), ^{
-
-            [self.myContext drawImage:image
-                               inRect:destRect
-                             fromRect:imageRect];
-        });
-    });
+    float t = [NSDate timeIntervalSinceReferenceDate] - startTime;
+    CIImage *image = [self imageForTransitionAtTime:t];
+    
+    // 描画領域を示す矩形
+    CGFloat scale = [[UIScreen mainScreen] scale];
+    CGRect destRect = CGRectMake(0, self.bounds.size.height * scale - imageRect.size.height,
+                                 imageRect.size.width,
+                                 imageRect.size.height);
+    
+    [self.myContext drawImage:image
+                       inRect:destRect
+                     fromRect:imageRect];
 }
 
 

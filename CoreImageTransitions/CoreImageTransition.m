@@ -105,18 +105,23 @@
     
     [containerView addSubview:toVC.view];
     
+    // Create snapshots
     UIImage *fromSnapshot = [fromVC.view snapshot];
     UIImage *toSnapshot   = [toVC.view snapshot];
     
+    // Start animating using Core Image
     self.transitionView = [[CoreImageTransitionView alloc] initWithFrame:containerView.bounds
                                                                fromImage:fromSnapshot
                                                                  toImage:toSnapshot];
-    [[transitionContext containerView] addSubview:_transitionView];
     [self.transitionView changeTransition:type];
+    [[transitionContext containerView] addSubview:_transitionView];
+    [self.transitionView start];
 
+    // Finish after the duration
     dispatch_time_t when = dispatch_time(DISPATCH_TIME_NOW,
                                          [self transitionDuration:transitionContext] * NSEC_PER_SEC);
     dispatch_after(when, dispatch_get_main_queue(), ^{
+        [self.transitionView stop];
         [self.transitionView removeFromSuperview];
         [transitionContext completeTransition:YES];
     });
