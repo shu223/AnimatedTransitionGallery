@@ -16,12 +16,9 @@
     NSTimeInterval  startTime;
     CGRect imageRect;
 }
-@property (nonatomic, strong) CIImage *inputImage;
-@property (nonatomic, strong) CIImage *inputTargetImage;
 @property (nonatomic, strong) CIImage *maskImage;
 @property (nonatomic, strong) CIImage *shadingImage;
 @property (nonatomic, strong) CIVector *extent;
-@property (nonatomic, strong) CIFilter *transition;
 @property (nonatomic, strong) CIContext *myContext;
 @property (nonatomic, assign) NSTimer *timer;
 @end
@@ -42,8 +39,8 @@
         UIImage *uiMaskImage = [UIImage imageNamed:@"mask.jpg"];
         UIImage *uiShadingImage = [UIImage imageNamed:@"restrictedshine.tiff"];
         
-        self.inputImage       = [CIImage imageWithCGImage:fromImage.CGImage];
-        self.inputTargetImage = [CIImage imageWithCGImage:toImage.CGImage];
+        _inputImage       = [CIImage imageWithCGImage:fromImage.CGImage];
+        _inputTargetImage = [CIImage imageWithCGImage:toImage.CGImage];
         self.maskImage = [CIImage imageWithCGImage:uiMaskImage.CGImage];
         self.shadingImage = [CIImage imageWithCGImage:uiShadingImage.CGImage];
         
@@ -78,9 +75,9 @@
 {
     [self.transition setValue:self.inputImage forKey:kCIInputImageKey];
     [self.transition setValue:self.inputTargetImage forKey:kCIInputTargetImageKey];
-    
+
     [self.transition setValue:@(time) forKey:kCIInputTimeKey];
-    
+        
     // フィルタ処理実行
     CIImage *transitionImage = [self.transition valueForKey:kCIOutputImageKey];
     
@@ -116,15 +113,6 @@
     
     switch (type) {
             
-        case CoreImageTransitionTypeDissolve:
-        case CoreImageTransitionTypeCopyMachine:
-        case CoreImageTransitionTypeFlash:
-        case CoreImageTransitionTypeMod:
-        case CoreImageTransitionTypeSwipe:
-        case CoreImageTransitionTypePageCurlWithShadow:
-        default:
-            break;
-            
         case CoreImageTransitionTypeDisintegrateWithMask:
             optionImage = self.maskImage;
             break;
@@ -137,16 +125,21 @@
         case CoreImageTransitionTypeRipple:
             optionImage = self.shadingImage;
             break;
+
+        default:
+            // no option image
+            break;
+            
     }
     
     if (optionImage) {
-        self.transition = [CoreImageTransitionHelper transitionWithType:type
-                                                          extent:self.extent
-                                                     optionImage:optionImage];
+        _transition = [CoreImageTransitionHelper transitionWithType:type
+                                                             extent:self.extent
+                                                        optionImage:optionImage];
     }
     else {
-        self.transition = [CoreImageTransitionHelper transitionWithType:type
-                                                          extent:self.extent];
+        _transition = [CoreImageTransitionHelper transitionWithType:type
+                                                             extent:self.extent];
     }
 }
 

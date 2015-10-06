@@ -127,6 +127,15 @@
             
             break;
         }
+        case CoreImageTransitionTypeMotionBlur:
+        {
+            transition = [CIFilter filterWithName: @"CIMotionBlur"
+                                    keysAndValues:
+                          kCIInputAngleKey, @(-M_PI_2),
+                          nil];
+            
+            break;
+        }
     }
     
     return transition;

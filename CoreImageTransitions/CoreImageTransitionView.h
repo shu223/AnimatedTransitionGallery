@@ -13,6 +13,10 @@
 
 @interface CoreImageTransitionView : GLKView
 
+@property (nonatomic, strong, readonly) CIFilter *transition;
+@property (nonatomic, strong, readonly) CIImage *inputImage;
+@property (nonatomic, strong, readonly) CIImage *inputTargetImage;
+
 - (instancetype)initWithFrame:(CGRect)frame
                     fromImage:(UIImage *)fromImage
                       toImage:(UIImage *)toImage;

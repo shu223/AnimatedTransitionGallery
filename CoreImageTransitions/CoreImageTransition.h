@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CoreImageTransitionTypes.h"
 
 
 #define kCoreImageTransitionTypeNameDissolve     @"Dissolve"
@@ -22,8 +23,14 @@
 
 @interface CoreImageTransition : NSObject <UIViewControllerAnimatedTransitioning>
 
-@property (nonatomic, assign, getter = isPresented) BOOL presenting;
+@property (nonatomic, assign) CoreImageTransitionType type;
+@property (nonatomic, assign) BOOL presenting;
 
 - (void)setTransitionTypeWithName:(NSString *)name;
 
+@end
+
+
+@interface UIView (Snapshot)
+- (UIImage *)snapshot;
 @end
