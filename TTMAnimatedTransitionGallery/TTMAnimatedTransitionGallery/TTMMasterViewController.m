@@ -19,6 +19,7 @@
 #import "HFDynamicAnimator.h"
 #import "FlipTransition.h"
 #import "CoreImageTransition.h"
+#import "CoreImageMotionBlurTransition.h"
 
 
 #define kClassNameForCoreImageTransition @"CoreImageTransition"
@@ -66,6 +67,7 @@
                    @"HUTransitionHorizontalLinesAnimator",
                    @"HUTransitionGhostAnimator",
                    @"ZBFallenBricksAnimator",
+                   [NSString stringWithFormat:@"%@%@", kClassNameForCoreImageTransition, kCoreImageTransitionTypeNameMotionBlur],
                    [NSString stringWithFormat:@"%@%@", kClassNameForCoreImageTransition, kCoreImageTransitionTypeNameCopyMachine],
                    [NSString stringWithFormat:@"%@%@", kClassNameForCoreImageTransition, kCoreImageTransitionTypeNameDisintegrateWithMask],
                    [NSString stringWithFormat:@"%@%@", kClassNameForCoreImageTransition, kCoreImageTransitionTypeNameDissolve],
@@ -193,10 +195,17 @@
     }
     // only for CoreImageTransition
     else if ([self.transitionClassName hasPrefix:kClassNameForCoreImageTransition]) {
-        
-        CoreImageTransition *transition = [[CoreImageTransition alloc] init];
+
         NSString *typeName = [self.transitionClassName stringByReplacingOccurrencesOfString:kClassNameForCoreImageTransition
                                                                                  withString:@""];
+        
+        CoreImageTransition *transition;
+        if ([typeName isEqualToString:kCoreImageTransitionTypeNameMotionBlur]) {
+            transition = [CoreImageMotionBlurTransition new];
+        }
+        else {
+            transition = [CoreImageTransition new];
+        }
         [transition setTransitionTypeWithName:typeName];
         
         self.animator = transition;

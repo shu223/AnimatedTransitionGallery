@@ -80,6 +80,7 @@
                                                                fromImage:fromSnapshot
                                                                  toImage:toSnapshot];
     [self.transitionView changeTransition:_type];
+    [self.transitionView setDuration:[self transitionDuration:transitionContext]];
     [[transitionContext containerView] addSubview:_transitionView];
     [self.transitionView start];
 

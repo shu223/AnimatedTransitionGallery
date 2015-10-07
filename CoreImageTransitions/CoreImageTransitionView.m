@@ -13,14 +13,14 @@
 @interface CoreImageTransitionView ()
 <GLKViewDelegate>
 {
-    NSTimeInterval  startTime;
+    CFTimeInterval startTime;
     CGRect imageRect;
 }
 @property (nonatomic, strong) CIImage *maskImage;
 @property (nonatomic, strong) CIImage *shadingImage;
 @property (nonatomic, strong) CIVector *extent;
 @property (nonatomic, strong) CIContext *myContext;
-@property (nonatomic, assign) NSTimer *timer;
+@property (nonatomic, assign) CADisplayLink *displayLink;
 @end
 
 
@@ -34,6 +34,7 @@
     if (self) {
 
         startTime = [NSDate timeIntervalSinceReferenceDate];
+        self.duration = 1.0;
 
         // 遷移前後の画像とマスク画像を生成
         UIImage *uiMaskImage = [UIImage imageNamed:@"mask.jpg"];
@@ -90,20 +91,19 @@
 
 - (void)start {
     
-    startTime = [NSDate timeIntervalSinceReferenceDate];
+    startTime = CACurrentMediaTime();
     
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0/30.0
-                                                  target:self
-                                                selector:@selector(onTimer:)
-                                                userInfo:nil
-                                                 repeats:YES];
-    [self.timer fire];
+    CADisplayLink *displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(onTimer:)];
+    [displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
+    self.displayLink = displayLink;
+
+    [self onTimer:nil];
 }
 
 - (void)stop {
-    if (self.timer) {
-        [self.timer invalidate];
-        self.timer = nil;
+    if (self.displayLink) {
+        [self.displayLink invalidate];
+        self.displayLink = nil;
     }
 }
 
@@ -153,9 +153,14 @@
 #pragma mark - GLKViewDelegate
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
+
+    float dt = ([self.displayLink timestamp] - startTime) / self.duration;
+
+    if (dt > 1.0 || dt < 0) {
+        return;
+    }
     
-    float t = [NSDate timeIntervalSinceReferenceDate] - startTime;
-    CIImage *image = [self imageForTransitionAtTime:t];
+    CIImage *image = [self imageForTransitionAtTime:dt];
     
     // 描画領域を示す矩形
     CGFloat scale = [[UIScreen mainScreen] scale];
@@ -172,7 +177,7 @@
 // =============================================================================
 #pragma mark - Timer Handler
 
-- (void)onTimer:(NSTimer *)timer {
+- (void)onTimer:(CADisplayLink *)link {
 
     [self setNeedsDisplay];
 }

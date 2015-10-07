@@ -82,6 +82,8 @@
 		8A88C38E1BC30DBC00A7F6E1 /* CoreImageTransitionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A88C38D1BC30DBC00A7F6E1 /* CoreImageTransitionHelper.m */; settings = {ASSET_TAGS = (); }; };
 		8A88C3921BC30DE800A7F6E1 /* mask.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A88C3901BC30DE800A7F6E1 /* mask.jpg */; settings = {ASSET_TAGS = (); }; };
 		8A88C3931BC30DE800A7F6E1 /* restrictedshine.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 8A88C3911BC30DE800A7F6E1 /* restrictedshine.tiff */; settings = {ASSET_TAGS = (); }; };
+		8A9032BC1BC483C80019B278 /* CoreImageMotionBlurTransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9032BB1BC483C80019B278 /* CoreImageMotionBlurTransitionView.m */; settings = {ASSET_TAGS = (); }; };
+		8A9032BF1BC4852B0019B278 /* CoreImageMotionBlurTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9032BE1BC4852B0019B278 /* CoreImageMotionBlurTransition.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -230,6 +232,10 @@
 		8A88C38D1BC30DBC00A7F6E1 /* CoreImageTransitionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreImageTransitionHelper.m; sourceTree = "<group>"; };
 		8A88C3901BC30DE800A7F6E1 /* mask.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mask.jpg; sourceTree = "<group>"; };
 		8A88C3911BC30DE800A7F6E1 /* restrictedshine.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = restrictedshine.tiff; sourceTree = "<group>"; };
+		8A9032BA1BC483C80019B278 /* CoreImageMotionBlurTransitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreImageMotionBlurTransitionView.h; sourceTree = "<group>"; };
+		8A9032BB1BC483C80019B278 /* CoreImageMotionBlurTransitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreImageMotionBlurTransitionView.m; sourceTree = "<group>"; };
+		8A9032BD1BC4852B0019B278 /* CoreImageMotionBlurTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreImageMotionBlurTransition.h; sourceTree = "<group>"; };
+		8A9032BE1BC4852B0019B278 /* CoreImageMotionBlurTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreImageMotionBlurTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +258,8 @@
 				8A88C3941BC313F200A7F6E1 /* Private */,
 				8A0826E51BC286A20058CDD8 /* CoreImageTransition.h */,
 				8A0826E61BC286A20058CDD8 /* CoreImageTransition.m */,
+				8A9032BD1BC4852B0019B278 /* CoreImageMotionBlurTransition.h */,
+				8A9032BE1BC4852B0019B278 /* CoreImageMotionBlurTransition.m */,
 			);
 			name = CoreImageTransitions;
 			path = ../CoreImageTransitions;
@@ -549,6 +557,8 @@
 				8A88C38D1BC30DBC00A7F6E1 /* CoreImageTransitionHelper.m */,
 				8A0826E11BC285E90058CDD8 /* CoreImageTransitionView.h */,
 				8A0826E21BC285E90058CDD8 /* CoreImageTransitionView.m */,
+				8A9032BA1BC483C80019B278 /* CoreImageMotionBlurTransitionView.h */,
+				8A9032BB1BC483C80019B278 /* CoreImageMotionBlurTransitionView.m */,
 			);
 			name = Private;
 			sourceTree = "<group>";
@@ -646,6 +656,8 @@
 				8A6E7FD718FD581200AFC158 /* ADSwipeFadeTransition.m in Sources */,
 				8A15466918FE4F0100BD36DF /* ShrinkDismissTransition.m in Sources */,
 				8A6E7FD618FD581200AFC158 /* ADSwapTransition.m in Sources */,
+				8A9032BF1BC4852B0019B278 /* CoreImageMotionBlurTransition.m in Sources */,
+				8A9032BC1BC483C80019B278 /* CoreImageMotionBlurTransitionView.m in Sources */,
 				8A6E7FDB18FD581200AFC158 /* ADTransitionController.m in Sources */,
 				8A6E7F2318FD2B5A00AFC158 /* ATCAnimatedTransitioningSquish.m in Sources */,
 				8A11EC5918CCFCDD00B77081 /* ZBFallenBricksAnimator.m in Sources */,

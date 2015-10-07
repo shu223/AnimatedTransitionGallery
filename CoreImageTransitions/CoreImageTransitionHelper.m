@@ -131,7 +131,7 @@
         {
             transition = [CIFilter filterWithName: @"CIMotionBlur"
                                     keysAndValues:
-                          kCIInputAngleKey, @(-M_PI_2),
+                          kCIInputAngleKey, @(M_PI),
                           nil];
             
             break;

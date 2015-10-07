@@ -13,6 +13,7 @@
 
 @interface CoreImageTransitionView : GLKView
 
+@property (nonatomic, assign) NSTimeInterval duration;
 @property (nonatomic, strong, readonly) CIFilter *transition;
 @property (nonatomic, strong, readonly) CIImage *inputImage;
 @property (nonatomic, strong, readonly) CIImage *inputTargetImage;
