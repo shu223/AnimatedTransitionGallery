@@ -127,6 +127,30 @@
             
             break;
         }
+        case CoreImageTransitionTypeBoxBlur:
+        {
+            transition = [CIFilter filterWithName: @"CIBoxBlur"
+                                    keysAndValues:
+                          nil];
+            
+            break;
+        }
+        case CoreImageTransitionTypeDiscBlur:
+        {
+            transition = [CIFilter filterWithName: @"CIDiscBlur"
+                                    keysAndValues:
+                          nil];
+            
+            break;
+        }
+        case CoreImageTransitionTypeGaussianBlur:
+        {
+            transition = [CIFilter filterWithName: @"CIGaussianBlur"
+                                    keysAndValues:
+                          nil];
+            
+            break;
+        }
         case CoreImageTransitionTypeMotionBlur:
         {
             transition = [CIFilter filterWithName: @"CIMotionBlur"

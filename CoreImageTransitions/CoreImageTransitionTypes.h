@@ -18,6 +18,9 @@ typedef NS_ENUM(NSUInteger, CoreImageTransitionType) {
     CoreImageTransitionTypePageCurlWithShadow,
     CoreImageTransitionTypeRipple,
 
+    CoreImageTransitionTypeGaussianBlur,
+    CoreImageTransitionTypeDiscBlur,
+    CoreImageTransitionTypeBoxBlur,
     CoreImageTransitionTypeMotionBlur,
 
     // --- not supported ----

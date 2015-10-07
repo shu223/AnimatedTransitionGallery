@@ -5,6 +5,8 @@
 //  Created by Shuichi Tsutsumi on 10/7/15.
 //  Copyright © 2015 Shuichi Tsutsumi. All rights reserved.
 //
+//  Reference: https://github.com/fastred/MotionBlur
+
 
 #import "CoreImageMotionBlurTransitionView.h"
 
@@ -14,17 +16,6 @@ static CGFloat positionDelta(CGPoint previousPosition, CGPoint currentPosition)
     const CGFloat dx = fabs(currentPosition.x - previousPosition.x);
     const CGFloat dy = fabs(currentPosition.y - previousPosition.y);
     return sqrt(pow(dx, 2) + pow(dy, 2));
-}
-
-static CGFloat opacityFromPositionDelta(CGFloat delta, CFTimeInterval tickDuration)
-{
-    const NSInteger expectedFPS = 60;
-    const CFTimeInterval expectedDuration = 1.0 / expectedFPS;
-    const CGFloat normalizedDelta = delta * expectedDuration / tickDuration;
-    
-    // A rough approximation of an opacity for a good looking blur. The larger the delta (movement velocity), the larger opacity of the blur layer.
-    const CGFloat unboundedOpacity = log2(normalizedDelta) / 5.0f;
-    return (CGFloat)fmax(fmin(unboundedOpacity, 1.0), 0.0);
 }
 
 
