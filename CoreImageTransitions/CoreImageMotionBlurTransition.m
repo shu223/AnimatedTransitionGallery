@@ -64,7 +64,6 @@
 
         [containerView addSubview:toVC.view];
     }
-    NSLog(@"initial:%@, target:%@", NSStringFromCGRect(initialFrame), NSStringFromCGRect(targetFrame));
 
     // Start animating using Core Image
     self.transitionView = [[CoreImageMotionBlurTransitionView alloc] initWithFrame:containerView.bounds
@@ -79,8 +78,6 @@
     
     [UIView animateWithDuration:[self transitionDuration:transitionContext]
                           delay:0
-//         usingSpringWithDamping:0.8
-//          initialSpringVelocity:self.presenting ? 0.6 : 0.0
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
                          self.transitionView.frame = targetFrame;

@@ -97,7 +97,7 @@
     [displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
     self.displayLink = displayLink;
 
-    [self onTimer:nil];
+    [self onTimer:displayLink];
 }
 
 - (void)stop {
@@ -156,7 +156,12 @@
 
     float dt = ([self.displayLink timestamp] - startTime) / self.duration;
 
-    if (dt > 1.0 || dt < 0) {
+    if (dt < 0) {
+        dt = 0;
+    }
+    
+    // finished
+    if (dt > 1.0) {
         return;
     }
     
