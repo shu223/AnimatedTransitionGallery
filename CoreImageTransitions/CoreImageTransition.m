@@ -99,29 +99,3 @@
 }
 
 @end
-
-
-
-@implementation UIView (Snapshot)
-- (UIImage *)snapshot
-{
-    UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, 0.0f);
-    CGContextRef graphicsContext = UIGraphicsGetCurrentContext();
-    
-    // http://stackoverflow.com/questions/6402393/screenshot-from-a-uitableview
-    if ([self isKindOfClass:[UITableView class]]) {
-        CGContextTranslateCTM(graphicsContext, 0,
-                              -[(UITableView *)self contentOffset].y);
-    }
-    
-    CGContextFillRect(graphicsContext, self.bounds);
-    
-    // good explanation of differences between drawViewHierarchyInRect:afterScreenUpdates: and renderInContext:
-    // https://github.com/radi/LiveFrost/issues/10#issuecomment-28959525
-    [self.layer renderInContext:graphicsContext];
-    UIImage *snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    return snapshotImage;
-}
-@end

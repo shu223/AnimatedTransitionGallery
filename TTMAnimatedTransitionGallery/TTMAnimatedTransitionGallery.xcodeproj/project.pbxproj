@@ -81,6 +81,7 @@
 		8A6E7FDF18FD581200AFC158 /* UIViewController+ADTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7FC618FD581200AFC158 /* UIViewController+ADTransitionController.m */; };
 		8A6E801918FE272E00AFC158 /* KWTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7FF018FE272E00AFC158 /* KWTransition.m */; };
 		8A6E803B18FE290E00AFC158 /* KWTransitionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E803A18FE290E00AFC158 /* KWTransitionHelper.m */; };
+		8A7CA2D41BD490DD0029E488 /* UIViewController+CoreImageTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7CA2D31BD490DD0029E488 /* UIViewController+CoreImageTransition.m */; settings = {ASSET_TAGS = (); }; };
 		8A88C38E1BC30DBC00A7F6E1 /* CoreImageTransitionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A88C38D1BC30DBC00A7F6E1 /* CoreImageTransitionHelper.m */; settings = {ASSET_TAGS = (); }; };
 		8A88C3921BC30DE800A7F6E1 /* mask.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A88C3901BC30DE800A7F6E1 /* mask.jpg */; settings = {ASSET_TAGS = (); }; };
 		8A88C3931BC30DE800A7F6E1 /* restrictedshine.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 8A88C3911BC30DE800A7F6E1 /* restrictedshine.tiff */; settings = {ASSET_TAGS = (); }; };
@@ -233,6 +234,8 @@
 		8A6E7FF018FE272E00AFC158 /* KWTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWTransition.m; sourceTree = "<group>"; };
 		8A6E803918FE290E00AFC158 /* KWTransitionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWTransitionHelper.h; sourceTree = "<group>"; };
 		8A6E803A18FE290E00AFC158 /* KWTransitionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWTransitionHelper.m; sourceTree = "<group>"; };
+		8A7CA2D21BD490DD0029E488 /* UIViewController+CoreImageTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CoreImageTransition.h"; sourceTree = "<group>"; };
+		8A7CA2D31BD490DD0029E488 /* UIViewController+CoreImageTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CoreImageTransition.m"; sourceTree = "<group>"; };
 		8A88C38B1BC30D4100A7F6E1 /* CoreImageTransitionTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreImageTransitionTypes.h; sourceTree = "<group>"; };
 		8A88C38C1BC30DBC00A7F6E1 /* CoreImageTransitionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreImageTransitionHelper.h; sourceTree = "<group>"; };
 		8A88C38D1BC30DBC00A7F6E1 /* CoreImageTransitionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreImageTransitionHelper.m; sourceTree = "<group>"; };
@@ -262,6 +265,8 @@
 			isa = PBXGroup;
 			children = (
 				8A88C3941BC313F200A7F6E1 /* Private */,
+				8A7CA2D21BD490DD0029E488 /* UIViewController+CoreImageTransition.h */,
+				8A7CA2D31BD490DD0029E488 /* UIViewController+CoreImageTransition.m */,
 				8A0826E51BC286A20058CDD8 /* CoreImageTransition.h */,
 				8A0826E61BC286A20058CDD8 /* CoreImageTransition.m */,
 				8A6CF5471BC4B6FB008FAAB8 /* CoreImageBlurTransition.h */,
@@ -691,6 +696,7 @@
 				8A6E7F4618FD394000AFC158 /* CEReversibleAnimationController.m in Sources */,
 				8A6E7F4418FD394000AFC158 /* CENatGeoAnimationController.m in Sources */,
 				8A15463218FE4C9800BD36DF /* HFDynamicAnimator.m in Sources */,
+				8A7CA2D41BD490DD0029E488 /* UIViewController+CoreImageTransition.m in Sources */,
 				8A11EC0C18CCFBDC00B77081 /* TTMMasterViewController.m in Sources */,
 				8A6E7FCF18FD581200AFC158 /* ADGhostTransition.m in Sources */,
 				8A6E7F3E18FD394000AFC158 /* CECardsAnimationController.m in Sources */,

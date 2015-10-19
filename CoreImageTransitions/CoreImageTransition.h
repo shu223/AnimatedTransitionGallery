@@ -29,8 +29,3 @@
 - (void)setTransitionTypeWithName:(NSString *)name;
 
 @end
-
-
-@interface UIView (Snapshot)
-- (UIImage *)snapshot;
-@end

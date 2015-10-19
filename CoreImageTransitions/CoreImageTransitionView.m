@@ -169,9 +169,10 @@
     
     // 描画領域を示す矩形
     CGFloat scale = [[UIScreen mainScreen] scale];
+    CGRect nativeBounds = [[UIScreen mainScreen] nativeBounds];
     CGRect destRect = CGRectMake(0, self.bounds.size.height * scale - imageRect.size.height,
-                                 imageRect.size.width,
-                                 imageRect.size.height);
+                                 nativeBounds.size.width,
+                                 nativeBounds.size.height);
     
     [self.myContext drawImage:image
                        inRect:destRect
@@ -187,4 +188,30 @@
     [self setNeedsDisplay];
 }
 
+@end
+
+
+
+@implementation UIView (Snapshot)
+- (UIImage *)snapshot
+{
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, 0.0f);
+    CGContextRef graphicsContext = UIGraphicsGetCurrentContext();
+    
+    // http://stackoverflow.com/questions/6402393/screenshot-from-a-uitableview
+    if ([self isKindOfClass:[UITableView class]]) {
+        CGContextTranslateCTM(graphicsContext, 0,
+                              -[(UITableView *)self contentOffset].y);
+    }
+    
+    CGContextFillRect(graphicsContext, self.bounds);
+    
+    // good explanation of differences between drawViewHierarchyInRect:afterScreenUpdates: and renderInContext:
+    // https://github.com/radi/LiveFrost/issues/10#issuecomment-28959525
+    [self.layer renderInContext:graphicsContext];
+    UIImage *snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return snapshotImage;
+}
 @end

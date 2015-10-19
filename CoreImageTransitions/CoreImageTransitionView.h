@@ -29,3 +29,8 @@
 - (NSString *)currentFilterName;
 
 @end
+
+
+@interface UIView (Snapshot)
+- (UIImage *)snapshot;
+@end
