@@ -1,6 +1,5 @@
 //
 //  CoreImageTransition.m
-//  TTMAnimatedTransitionGallery
 //
 //  Created by Shuichi Tsutsumi on 10/5/15.
 //  Copyright © 2015 Shuichi Tsutsumi. All rights reserved.

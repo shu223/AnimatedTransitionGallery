@@ -8,6 +8,10 @@
 #import "CoreImageTransitionTypes.h"
 
 
+@class CIVector;
+@class CIFilter;
+@class CIImage;
+
 @interface CoreImageTransitionHelper : NSObject
 
 + (CIFilter *)transitionWithType:(CoreImageTransitionType)type

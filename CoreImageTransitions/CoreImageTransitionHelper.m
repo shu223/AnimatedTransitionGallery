@@ -5,6 +5,8 @@
 //
 
 #import "CoreImageTransitionHelper.h"
+@import CoreImage;
+
 
 @implementation CoreImageTransitionHelper
 

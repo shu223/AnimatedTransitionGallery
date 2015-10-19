@@ -1,6 +1,5 @@
 //
 //  UIViewController+Transition.m
-//  Bonx
 //
 //  Created by Shuichi Tsutsumi on 10/13/15.
 //  Copyright © 2015 Shuichi Tsutsumi. All rights reserved.
