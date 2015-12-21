@@ -1,10 +1,15 @@
 AnimatedTransitionGallery
 =========================
 
-Collection of iOS 7 custom animated transitions using UIViewControllerAnimatedTransitioning protocol.
+Collection of custom animated transitions for iOS using `UIViewControllerAnimatedTransitioning` protocol.
 
-![](gallery.gif)
+![](gif/gallery.gif)
 
+![](gif/coreimage.gif)
+
+![](gif/motionblur.gif)
+
+![](gif/boxblur.gif)
 
 ##How to build
 
@@ -20,6 +25,17 @@ $ git submodule update --init --recursive
 - HUTransitionHorizontalLinesAnimator
 - HUTransitionGhostAnimator
 - ZBFallenBricksAnimator
+- CoreImageTransitionBoxBlur
+- CoreImageTransitionMotionBlur
+- CoreImageTransitionCopyMachine
+- CoreImageTransitionDisintegrateWithMask
+- CoreImageTransitionDissolve
+- CoreImageTransitionFlash
+- CoreImageTransitionMod
+- CoreImageTransitionPageCurl
+- CoreImageTransitionPageCurlWithShadow
+- CoreImageTransitionRipple
+- CoreImageTransitionSwipe
 - ATCAnimatedTransitioningFade
 - ATCAnimatedTransitioningBounce
 - ATCAnimatedTransitioningSquish
