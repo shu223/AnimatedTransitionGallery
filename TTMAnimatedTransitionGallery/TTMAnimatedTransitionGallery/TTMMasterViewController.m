@@ -10,6 +10,8 @@
 #import "TTMDetailViewController.h"
 #import "HUTransitionAnimator.h"
 #import "ATCAnimatedTransitioning.h"
+#import "ATCAnimatedTransitioningFade.h"
+#import "ATCAnimatedTransitioningBounce.h"
 #import "LCZoomTransition.h"
 #import "CEReversibleAnimationController.h"
 #import "ADTransitionController.h"
@@ -253,9 +255,14 @@
     // Animated-Transition-Collection
     else if ([self.animator isKindOfClass:[ATCAnimatedTransitioning class]]) {
         
-        [self.animator setIsPush:YES];
         [self.animator setDuration:1.0];
-        [self.animator setDismissal:(operation == UINavigationControllerOperationPop)];
+        [self.animator setIsPush:(operation != UINavigationControllerOperationPop)];
+        
+        if (![self.animator isKindOfClass:[ATCAnimatedTransitioningFade class]] &&
+            ![self.animator isKindOfClass:[ATCAnimatedTransitioningBounce class]])
+        {
+            [self.animator setDismissal:(operation == UINavigationControllerOperationPop)];
+        }
         
         if (operation == UINavigationControllerOperationPush) {
             
