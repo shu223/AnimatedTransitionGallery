@@ -20,6 +20,16 @@
     [self addChildViewController:toVC];
     [self.view addSubview:toVC.view];
 
+    // shouldn't be processed in background because it uses OpenGL.
+    if ([[UIApplication sharedApplication] applicationState] != UIApplicationStateActive) {
+        [fromVC willMoveToParentViewController:nil];
+        [fromVC.view removeFromSuperview];
+        [fromVC removeFromParentViewController];
+        [toVC didMoveToParentViewController:self];
+        completion();
+        return;
+    }
+
     UIImage *fromSnapshot = [fromVC.view snapshot];
     UIImage *toSnapshot = [toVC.view snapshot];
 
