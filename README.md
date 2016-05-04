@@ -1,6 +1,13 @@
 AnimatedTransitionGallery
 =========================
 
+[![Platform](http://img.shields.io/badge/platform-ios-green.svg?style=flat
+)](https://developer.apple.com/iphone/index.action)
+[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
+)](http://mit-license.org)
+[![Twitter](https://img.shields.io/badge/twitter-@shu223-blue.svg?style=flat)](http://twitter.com/shu223)
+
+
 Collection of custom animated transitions for iOS using `UIViewControllerAnimatedTransitioning` protocol.
 
 ![](gif/gallery.gif)
@@ -86,6 +93,13 @@ $ git submodule update --init --recursive
 - FlipTransition
 - ShrinkDismissTransition
 
-##Related Article
+##Author
 
-- [http://d.hatena.ne.jp/shu223/20140416/1397608824](http://d.hatena.ne.jp/shu223/20140416/1397608824)  (Japanese)
+**Shuichi Tsutsumi**
+
+iOS freelancer in Japan. Welcome works from abroad!
+
+- PAST WORKS:  [My Profile Summary](https://medium.com/@shu223/my-profile-summary-f14bfc1e7099#.vdh0i7clr)
+- PROFILES: [LinkedIn](https://www.linkedin.com/profile/view?id=214896557)
+- BLOGS: [English](https://medium.com/@shu223/) / [Japanese](http://d.hatena.ne.jp/shu223/)
+- CONTACTS: [Twitter](https://twitter.com/shu223) / [Facebook](https://www.facebook.com/shuichi.tsutsumi)
