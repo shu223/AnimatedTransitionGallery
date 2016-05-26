@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A0826E41BC285E90058CDD8 /* CoreImageTransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0826E21BC285E90058CDD8 /* CoreImageTransitionView.m */; settings = {ASSET_TAGS = (); }; };
-		8A0826E71BC286A20058CDD8 /* CoreImageTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0826E61BC286A20058CDD8 /* CoreImageTransition.m */; settings = {ASSET_TAGS = (); }; };
+		8A0826E41BC285E90058CDD8 /* CoreImageTransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0826E21BC285E90058CDD8 /* CoreImageTransitionView.m */; };
+		8A0826E71BC286A20058CDD8 /* CoreImageTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0826E61BC286A20058CDD8 /* CoreImageTransition.m */; };
 		8A11EBF618CCFBDB00B77081 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11EBF518CCFBDB00B77081 /* Foundation.framework */; };
 		8A11EBF818CCFBDB00B77081 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11EBF718CCFBDB00B77081 /* CoreGraphics.framework */; };
 		8A11EBFA18CCFBDB00B77081 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11EBF918CCFBDB00B77081 /* UIKit.framework */; };
@@ -29,14 +29,12 @@
 		8A15461718FE495B00BD36DF /* DMBaseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15461118FE495B00BD36DF /* DMBaseTransition.m */; };
 		8A15461818FE495B00BD36DF /* DMScaleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15461318FE495B00BD36DF /* DMScaleTransition.m */; };
 		8A15461918FE495B00BD36DF /* DMSlideTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15461518FE495B00BD36DF /* DMSlideTransition.m */; };
-		8A15463018FE4C9800BD36DF /* HFAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15462218FE4C9800BD36DF /* HFAnimator.m */; };
-		8A15463218FE4C9800BD36DF /* HFDynamicAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15462618FE4C9800BD36DF /* HFDynamicAnimator.m */; };
 		8A15466018FE4F0100BD36DF /* BouncePresentTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15464818FE4F0100BD36DF /* BouncePresentTransition.m */; };
 		8A15466618FE4F0100BD36DF /* FlipTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15465418FE4F0100BD36DF /* FlipTransition.m */; };
 		8A15466918FE4F0100BD36DF /* ShrinkDismissTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A15465818FE4F0100BD36DF /* ShrinkDismissTransition.m */; };
 		8A15FFF819F332CF00914B6E /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A15FFF719F332CF00914B6E /* Launch Screen.xib */; };
-		8A6CF5491BC4B6FB008FAAB8 /* CoreImageBlurTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CF5481BC4B6FB008FAAB8 /* CoreImageBlurTransition.m */; settings = {ASSET_TAGS = (); }; };
-		8A6CF54C1BC4B777008FAAB8 /* CoreImageBlurTransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CF54B1BC4B777008FAAB8 /* CoreImageBlurTransitionView.m */; settings = {ASSET_TAGS = (); }; };
+		8A6CF5491BC4B6FB008FAAB8 /* CoreImageBlurTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CF5481BC4B6FB008FAAB8 /* CoreImageBlurTransition.m */; };
+		8A6CF54C1BC4B777008FAAB8 /* CoreImageBlurTransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CF54B1BC4B777008FAAB8 /* CoreImageBlurTransitionView.m */; };
 		8A6E7F1F18FD2B5A00AFC158 /* ATCAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F1418FD2B5A00AFC158 /* ATCAnimatedTransitioning.m */; };
 		8A6E7F2018FD2B5A00AFC158 /* ATCAnimatedTransitioningBounce.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F1618FD2B5A00AFC158 /* ATCAnimatedTransitioningBounce.m */; };
 		8A6E7F2118FD2B5A00AFC158 /* ATCAnimatedTransitioningFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7F1818FD2B5A00AFC158 /* ATCAnimatedTransitioningFade.m */; };
@@ -81,12 +79,14 @@
 		8A6E7FDF18FD581200AFC158 /* UIViewController+ADTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7FC618FD581200AFC158 /* UIViewController+ADTransitionController.m */; };
 		8A6E801918FE272E00AFC158 /* KWTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7FF018FE272E00AFC158 /* KWTransition.m */; };
 		8A6E803B18FE290E00AFC158 /* KWTransitionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E803A18FE290E00AFC158 /* KWTransitionHelper.m */; };
-		8A7CA2D41BD490DD0029E488 /* UIViewController+CoreImageTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7CA2D31BD490DD0029E488 /* UIViewController+CoreImageTransition.m */; settings = {ASSET_TAGS = (); }; };
-		8A88C38E1BC30DBC00A7F6E1 /* CoreImageTransitionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A88C38D1BC30DBC00A7F6E1 /* CoreImageTransitionHelper.m */; settings = {ASSET_TAGS = (); }; };
-		8A88C3921BC30DE800A7F6E1 /* mask.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A88C3901BC30DE800A7F6E1 /* mask.jpg */; settings = {ASSET_TAGS = (); }; };
-		8A88C3931BC30DE800A7F6E1 /* restrictedshine.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 8A88C3911BC30DE800A7F6E1 /* restrictedshine.tiff */; settings = {ASSET_TAGS = (); }; };
-		8A9032BC1BC483C80019B278 /* CoreImageMotionBlurTransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9032BB1BC483C80019B278 /* CoreImageMotionBlurTransitionView.m */; settings = {ASSET_TAGS = (); }; };
-		8A9032BF1BC4852B0019B278 /* CoreImageMotionBlurTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9032BE1BC4852B0019B278 /* CoreImageMotionBlurTransition.m */; settings = {ASSET_TAGS = (); }; };
+		8A7CA2D41BD490DD0029E488 /* UIViewController+CoreImageTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7CA2D31BD490DD0029E488 /* UIViewController+CoreImageTransition.m */; };
+		8A88C38E1BC30DBC00A7F6E1 /* CoreImageTransitionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A88C38D1BC30DBC00A7F6E1 /* CoreImageTransitionHelper.m */; };
+		8A88C3921BC30DE800A7F6E1 /* mask.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A88C3901BC30DE800A7F6E1 /* mask.jpg */; };
+		8A88C3931BC30DE800A7F6E1 /* restrictedshine.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 8A88C3911BC30DE800A7F6E1 /* restrictedshine.tiff */; };
+		8A8CAF571CF7556D0047BBA2 /* HFAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8CAF541CF7556D0047BBA2 /* HFAnimator.m */; };
+		8A8CAF581CF7556D0047BBA2 /* HFDynamicAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8CAF561CF7556D0047BBA2 /* HFDynamicAnimator.m */; };
+		8A9032BC1BC483C80019B278 /* CoreImageMotionBlurTransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9032BB1BC483C80019B278 /* CoreImageMotionBlurTransitionView.m */; };
+		8A9032BF1BC4852B0019B278 /* CoreImageMotionBlurTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9032BE1BC4852B0019B278 /* CoreImageMotionBlurTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -131,10 +131,6 @@
 		8A15461318FE495B00BD36DF /* DMScaleTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMScaleTransition.m; sourceTree = "<group>"; };
 		8A15461418FE495B00BD36DF /* DMSlideTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMSlideTransition.h; sourceTree = "<group>"; };
 		8A15461518FE495B00BD36DF /* DMSlideTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMSlideTransition.m; sourceTree = "<group>"; };
-		8A15462118FE4C9800BD36DF /* HFAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFAnimator.h; sourceTree = "<group>"; };
-		8A15462218FE4C9800BD36DF /* HFAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFAnimator.m; sourceTree = "<group>"; };
-		8A15462518FE4C9800BD36DF /* HFDynamicAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFDynamicAnimator.h; sourceTree = "<group>"; };
-		8A15462618FE4C9800BD36DF /* HFDynamicAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFDynamicAnimator.m; sourceTree = "<group>"; };
 		8A15464718FE4F0100BD36DF /* BouncePresentTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncePresentTransition.h; sourceTree = "<group>"; };
 		8A15464818FE4F0100BD36DF /* BouncePresentTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncePresentTransition.m; sourceTree = "<group>"; };
 		8A15465318FE4F0100BD36DF /* FlipTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipTransition.h; sourceTree = "<group>"; };
@@ -241,6 +237,10 @@
 		8A88C38D1BC30DBC00A7F6E1 /* CoreImageTransitionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreImageTransitionHelper.m; sourceTree = "<group>"; };
 		8A88C3901BC30DE800A7F6E1 /* mask.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mask.jpg; sourceTree = "<group>"; };
 		8A88C3911BC30DE800A7F6E1 /* restrictedshine.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = restrictedshine.tiff; sourceTree = "<group>"; };
+		8A8CAF531CF7556D0047BBA2 /* HFAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFAnimator.h; sourceTree = "<group>"; };
+		8A8CAF541CF7556D0047BBA2 /* HFAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFAnimator.m; sourceTree = "<group>"; };
+		8A8CAF551CF7556D0047BBA2 /* HFDynamicAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFDynamicAnimator.h; sourceTree = "<group>"; };
+		8A8CAF561CF7556D0047BBA2 /* HFDynamicAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFDynamicAnimator.m; sourceTree = "<group>"; };
 		8A9032BA1BC483C80019B278 /* CoreImageMotionBlurTransitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreImageMotionBlurTransitionView.h; sourceTree = "<group>"; };
 		8A9032BB1BC483C80019B278 /* CoreImageMotionBlurTransitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreImageMotionBlurTransitionView.m; sourceTree = "<group>"; };
 		8A9032BD1BC4852B0019B278 /* CoreImageMotionBlurTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreImageMotionBlurTransition.h; sourceTree = "<group>"; };
@@ -343,7 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				8A15464018FE4F0100BD36DF /* huldun/Transitions */,
-				8A15461A18FE4C9800BD36DF /* CustomTransitions */,
+				8A8CAF521CF7554E0047BBA2 /* gregoryklein_CustomTransitions */,
 				8A15460D18FE495B00BD36DF /* DMCustomTransitions */,
 				8A6E7FED18FE272E00AFC158 /* KWTransition */,
 				8A6E7F9418FD581200AFC158 /* ADTransitionController */,
@@ -398,18 +398,6 @@
 			);
 			name = DMCustomTransitions;
 			path = ../submodules/DMCustomTransitions/Transitions;
-			sourceTree = "<group>";
-		};
-		8A15461A18FE4C9800BD36DF /* CustomTransitions */ = {
-			isa = PBXGroup;
-			children = (
-				8A15462118FE4C9800BD36DF /* HFAnimator.h */,
-				8A15462218FE4C9800BD36DF /* HFAnimator.m */,
-				8A15462518FE4C9800BD36DF /* HFDynamicAnimator.h */,
-				8A15462618FE4C9800BD36DF /* HFDynamicAnimator.m */,
-			);
-			name = CustomTransitions;
-			path = ../submodules/CustomTransitions/CustomAnimations;
 			sourceTree = "<group>";
 		};
 		8A15464018FE4F0100BD36DF /* huldun/Transitions */ = {
@@ -578,6 +566,18 @@
 			name = Private;
 			sourceTree = "<group>";
 		};
+		8A8CAF521CF7554E0047BBA2 /* gregoryklein_CustomTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				8A8CAF531CF7556D0047BBA2 /* HFAnimator.h */,
+				8A8CAF541CF7556D0047BBA2 /* HFAnimator.m */,
+				8A8CAF551CF7556D0047BBA2 /* HFDynamicAnimator.h */,
+				8A8CAF561CF7556D0047BBA2 /* HFDynamicAnimator.m */,
+			);
+			name = gregoryklein_CustomTransitions;
+			path = ../gregoryklein_CustomTransitions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -659,10 +659,10 @@
 				8A6E7F4718FD394000AFC158 /* CETurnAnimationController.m in Sources */,
 				8A6E7FC918FD581200AFC158 /* ADCrossTransition.m in Sources */,
 				8A11EC3A18CCFCC000B77081 /* HUTransitionAnimator.m in Sources */,
-				8A15463018FE4C9800BD36DF /* HFAnimator.m in Sources */,
 				8A0826E71BC286A20058CDD8 /* CoreImageTransition.m in Sources */,
 				8A6E7F2218FD2B5A00AFC158 /* ATCAnimatedTransitioningFloat.m in Sources */,
 				8A11EC5518CCFCDD00B77081 /* UIViewController+Animator.m in Sources */,
+				8A8CAF581CF7556D0047BBA2 /* HFDynamicAnimator.m in Sources */,
 				8A6E801918FE272E00AFC158 /* KWTransition.m in Sources */,
 				8A6E7F2818FD374700AFC158 /* LCZoomTransition.m in Sources */,
 				8A6E7FD518FD581200AFC158 /* ADSlideTransition.m in Sources */,
@@ -679,6 +679,7 @@
 				8A11EC5918CCFCDD00B77081 /* ZBFallenBricksAnimator.m in Sources */,
 				8A6E7FD818FD581200AFC158 /* ADSwipeTransition.m in Sources */,
 				8A6E7F2118FD2B5A00AFC158 /* ATCAnimatedTransitioningFade.m in Sources */,
+				8A8CAF571CF7556D0047BBA2 /* HFAnimator.m in Sources */,
 				8A6E7FD118FD581200AFC158 /* ADModernPushTransition.m in Sources */,
 				8A6E7FD918FD581200AFC158 /* ADTransformTransition.m in Sources */,
 				8A6E7F4318FD394000AFC158 /* CEFoldAnimationController.m in Sources */,
@@ -695,7 +696,6 @@
 				8A6E7FDC18FD581200AFC158 /* ADTransitioningDelegate.m in Sources */,
 				8A6E7F4618FD394000AFC158 /* CEReversibleAnimationController.m in Sources */,
 				8A6E7F4418FD394000AFC158 /* CENatGeoAnimationController.m in Sources */,
-				8A15463218FE4C9800BD36DF /* HFDynamicAnimator.m in Sources */,
 				8A7CA2D41BD490DD0029E488 /* UIViewController+CoreImageTransition.m in Sources */,
 				8A11EC0C18CCFBDC00B77081 /* TTMMasterViewController.m in Sources */,
 				8A6E7FCF18FD581200AFC158 /* ADGhostTransition.m in Sources */,

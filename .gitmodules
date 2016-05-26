@@ -22,9 +22,6 @@ url=https://github.com/KurtWagner/KWTransition.git
 [submodule "submodules/DMCustomTransitions"]
 	path = submodules/DMCustomTransitions
 url=https://github.com/Dimillian/DMCustomTransitions.git
-[submodule "submodules/CustomTransitions"]
-	path = submodules/CustomTransitions
-url=https://github.com/gregoryklein/CustomTransitions.git
 [submodule "submodules/haldun_Transitions"]
 	path = submodules/haldun_Transitions
 url=https://github.com/haldun/Transitions.git
