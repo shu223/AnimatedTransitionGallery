@@ -22,3 +22,6 @@ url=https://github.com/Dimillian/DMCustomTransitions.git
 [submodule "submodules/haldun_Transitions"]
 	path = submodules/haldun_Transitions
 url=https://github.com/haldun/Transitions.git
+[submodule "submodules/ADTransitionController"]
+	path = submodules/ADTransitionController
+	url = https://github.com/shu223/ADTransitionController
