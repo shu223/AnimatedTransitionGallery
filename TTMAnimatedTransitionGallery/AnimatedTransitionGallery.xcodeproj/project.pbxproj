@@ -94,14 +94,14 @@
 		8A0826E21BC285E90058CDD8 /* CoreImageTransitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreImageTransitionView.m; sourceTree = "<group>"; };
 		8A0826E51BC286A20058CDD8 /* CoreImageTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreImageTransition.h; sourceTree = "<group>"; };
 		8A0826E61BC286A20058CDD8 /* CoreImageTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreImageTransition.m; sourceTree = "<group>"; };
-		8A11EBF218CCFBDB00B77081 /* TTMAnimatedTransitionGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTMAnimatedTransitionGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A11EBF218CCFBDB00B77081 /* AnimatedTransitionGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatedTransitionGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A11EBF518CCFBDB00B77081 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8A11EBF718CCFBDB00B77081 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8A11EBF918CCFBDB00B77081 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		8A11EBFD18CCFBDC00B77081 /* TTMAnimatedTransitionGallery-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TTMAnimatedTransitionGallery-Info.plist"; sourceTree = "<group>"; };
+		8A11EBFD18CCFBDC00B77081 /* AnimatedTransitionGallery-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AnimatedTransitionGallery-Info.plist"; sourceTree = "<group>"; };
 		8A11EBFF18CCFBDC00B77081 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8A11EC0118CCFBDC00B77081 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8A11EC0318CCFBDC00B77081 /* TTMAnimatedTransitionGallery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TTMAnimatedTransitionGallery-Prefix.pch"; sourceTree = "<group>"; };
+		8A11EC0318CCFBDC00B77081 /* AnimatedTransitionGallery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnimatedTransitionGallery-Prefix.pch"; sourceTree = "<group>"; };
 		8A11EC0418CCFBDC00B77081 /* TTMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTMAppDelegate.h; sourceTree = "<group>"; };
 		8A11EC0518CCFBDC00B77081 /* TTMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTMAppDelegate.m; sourceTree = "<group>"; };
 		8A11EC0818CCFBDC00B77081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -283,7 +283,7 @@
 			children = (
 				8A0826DD1BC285E90058CDD8 /* CoreImageTransitions */,
 				8A11EC3018CCFCA100B77081 /* AnimatedTransitionings */,
-				8A11EBFB18CCFBDC00B77081 /* TTMAnimatedTransitionGallery */,
+				8A11EBFB18CCFBDC00B77081 /* AnimatedTransitionGallery */,
 				8A11EBFC18CCFBDC00B77081 /* Supporting Files */,
 				8A11EBF418CCFBDB00B77081 /* Frameworks */,
 				8A11EBF318CCFBDB00B77081 /* Products */,
@@ -293,7 +293,7 @@
 		8A11EBF318CCFBDB00B77081 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8A11EBF218CCFBDB00B77081 /* TTMAnimatedTransitionGallery.app */,
+				8A11EBF218CCFBDB00B77081 /* AnimatedTransitionGallery.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -309,7 +309,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8A11EBFB18CCFBDC00B77081 /* TTMAnimatedTransitionGallery */ = {
+		8A11EBFB18CCFBDC00B77081 /* AnimatedTransitionGallery */ = {
 			isa = PBXGroup;
 			children = (
 				8A11EC0418CCFBDC00B77081 /* TTMAppDelegate.h */,
@@ -323,20 +323,20 @@
 				8A6E803A18FE290E00AFC158 /* KWTransitionHelper.m */,
 				8A11EC1018CCFBDC00B77081 /* Images.xcassets */,
 			);
-			path = TTMAnimatedTransitionGallery;
+			path = AnimatedTransitionGallery;
 			sourceTree = "<group>";
 		};
 		8A11EBFC18CCFBDC00B77081 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8A11EBFD18CCFBDC00B77081 /* TTMAnimatedTransitionGallery-Info.plist */,
+				8A11EBFD18CCFBDC00B77081 /* AnimatedTransitionGallery-Info.plist */,
 				8A11EBFE18CCFBDC00B77081 /* InfoPlist.strings */,
 				8A11EC0118CCFBDC00B77081 /* main.m */,
-				8A11EC0318CCFBDC00B77081 /* TTMAnimatedTransitionGallery-Prefix.pch */,
+				8A11EC0318CCFBDC00B77081 /* AnimatedTransitionGallery-Prefix.pch */,
 				8A15FFF719F332CF00914B6E /* Launch Screen.xib */,
 			);
 			name = "Supporting Files";
-			path = TTMAnimatedTransitionGallery;
+			path = AnimatedTransitionGallery;
 			sourceTree = "<group>";
 		};
 		8A11EC3018CCFCA100B77081 /* AnimatedTransitionings */ = {
@@ -581,9 +581,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8A11EBF118CCFBDB00B77081 /* TTMAnimatedTransitionGallery */ = {
+		8A11EBF118CCFBDB00B77081 /* AnimatedTransitionGallery */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8A11EC2718CCFBDC00B77081 /* Build configuration list for PBXNativeTarget "TTMAnimatedTransitionGallery" */;
+			buildConfigurationList = 8A11EC2718CCFBDC00B77081 /* Build configuration list for PBXNativeTarget "AnimatedTransitionGallery" */;
 			buildPhases = (
 				8A11EBEE18CCFBDB00B77081 /* Sources */,
 				8A11EBEF18CCFBDB00B77081 /* Frameworks */,
@@ -593,9 +593,9 @@
 			);
 			dependencies = (
 			);
-			name = TTMAnimatedTransitionGallery;
-			productName = TTMAnimatedTransitionGallery;
-			productReference = 8A11EBF218CCFBDB00B77081 /* TTMAnimatedTransitionGallery.app */;
+			name = AnimatedTransitionGallery;
+			productName = AnimatedTransitionGallery;
+			productReference = 8A11EBF218CCFBDB00B77081 /* AnimatedTransitionGallery.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -607,8 +607,13 @@
 				CLASSPREFIX = TTM;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Shuichi Tsutsumi";
+				TargetAttributes = {
+					8A11EBF118CCFBDB00B77081 = {
+						DevelopmentTeam = 9Z86A4AWDE;
+					};
+				};
 			};
-			buildConfigurationList = 8A11EBED18CCFBDB00B77081 /* Build configuration list for PBXProject "TTMAnimatedTransitionGallery" */;
+			buildConfigurationList = 8A11EBED18CCFBDB00B77081 /* Build configuration list for PBXProject "AnimatedTransitionGallery" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -621,7 +626,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8A11EBF118CCFBDB00B77081 /* TTMAnimatedTransitionGallery */,
+				8A11EBF118CCFBDB00B77081 /* AnimatedTransitionGallery */,
 			);
 		};
 /* End PBXProject section */
@@ -829,10 +834,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 9Z86A4AWDE;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TTMAnimatedTransitionGallery/TTMAnimatedTransitionGallery-Prefix.pch";
-				INFOPLIST_FILE = "TTMAnimatedTransitionGallery/TTMAnimatedTransitionGallery-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "Shuichi-Tsutsumi.${PRODUCT_NAME:rfc1034identifier}";
+				GCC_PREFIX_HEADER = "AnimatedTransitionGallery/AnimatedTransitionGallery-Prefix.pch";
+				INFOPLIST_FILE = "AnimatedTransitionGallery/AnimatedTransitionGallery-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Shuichi-Tsutsumi.AnimatedTransitionGallery";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -843,10 +849,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 9Z86A4AWDE;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TTMAnimatedTransitionGallery/TTMAnimatedTransitionGallery-Prefix.pch";
-				INFOPLIST_FILE = "TTMAnimatedTransitionGallery/TTMAnimatedTransitionGallery-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "Shuichi-Tsutsumi.${PRODUCT_NAME:rfc1034identifier}";
+				GCC_PREFIX_HEADER = "AnimatedTransitionGallery/AnimatedTransitionGallery-Prefix.pch";
+				INFOPLIST_FILE = "AnimatedTransitionGallery/AnimatedTransitionGallery-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Shuichi-Tsutsumi.AnimatedTransitionGallery";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -855,7 +862,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8A11EBED18CCFBDB00B77081 /* Build configuration list for PBXProject "TTMAnimatedTransitionGallery" */ = {
+		8A11EBED18CCFBDB00B77081 /* Build configuration list for PBXProject "AnimatedTransitionGallery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8A11EC2518CCFBDC00B77081 /* Debug */,
@@ -864,7 +871,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8A11EC2718CCFBDC00B77081 /* Build configuration list for PBXNativeTarget "TTMAnimatedTransitionGallery" */ = {
+		8A11EC2718CCFBDC00B77081 /* Build configuration list for PBXNativeTarget "AnimatedTransitionGallery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8A11EC2818CCFBDC00B77081 /* Debug */,

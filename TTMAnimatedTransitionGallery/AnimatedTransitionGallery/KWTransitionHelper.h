@@ -1,6 +1,6 @@
 //
 //  KWTransitionHelper.h
-//  TTMAnimatedTransitionGallery
+//  AnimatedTransitionGallery
 //
 //  Created by shuichi on 4/16/14.
 //  Copyright (c) 2014 Shuichi Tsutsumi. All rights reserved.

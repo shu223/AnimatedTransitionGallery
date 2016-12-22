@@ -1,6 +1,6 @@
 //
 //  TTMAppDelegate.h
-//  TTMAnimatedTransitionGallery
+//  AnimatedTransitionGallery
 //
 //  Created by shuichi on 3/10/14.
 //  Copyright (c) 2014 Shuichi Tsutsumi. All rights reserved.
