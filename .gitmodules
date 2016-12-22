@@ -1,6 +1,3 @@
-[submodule "submodules/ADTransitionController"]
-	path = submodules/ADTransitionController
-	url = https://github.com/applidium/ADTransitionController
 [submodule "submodules/VCTransitionsLibrary"]
 	path = submodules/VCTransitionsLibrary
 	url = https://github.com/ColinEberhardt/VCTransitionsLibrary
