@@ -18,15 +18,15 @@ Collection of custom animated transitions for iOS using `UIViewControllerAnimate
 
 ![](gif/boxblur.gif)
 
-##How to build
+## How to build
 
-````
+```
 $ git clone https://github.com/shu223/AnimatedTransitionGallery
 $ cd AnimatedTransitionGallery/
 $ git submodule update --init --recursive
-````
+```
 
-##Available Transitions
+## Available Transitions
 
 - HUTransitionVerticalLinesAnimator
 - HUTransitionHorizontalLinesAnimator
@@ -93,7 +93,7 @@ $ git submodule update --init --recursive
 - FlipTransition
 - ShrinkDismissTransition
 
-##Author
+## Author
 
 **Shuichi Tsutsumi**
 
